@@ -4,18 +4,20 @@ import FA from 'react-fontawesome'
 import { margins } from './globals'
 
 const socialEntryStyle = css(`
-    margin: 0 ${margins.xsm}px 0 0;
+    margin: 0 ${margins.sm}px 0 0;
     border: none;
+    font-size: 24px;
 `)
 
-const SocialEntry = p => (
+export const SocialEntry = p => (
   <a
     href={p.href}
     target="_blank"
     rel="noopener noreferrer"
     className={socialEntryStyle}
+    role="button"
   >
-    <FA name={p.iconName} />
+    <FA name={p.iconName} size={p.size} />
     {p.children || null}
   </a>
 )
