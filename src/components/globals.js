@@ -7,7 +7,8 @@ export const margins = {
   xsm: 6,
   sm: 12,
   md: 28,
-  lg: 50
+  lg: 50,
+  xl: 75
 }
 
 export const transitions = {
@@ -22,7 +23,7 @@ export const fontStack = 'Helvetica Neue,Helvetica,Arial,sans-serif;'
 
 export const breakpoints = [
   {
-    breakpoint: 768,
+    breakpoint: 850,
     size: 750
   },
   {
@@ -31,6 +32,6 @@ export const breakpoints = [
   },
   {
     breakpoint: 1170,
-    size: 1170
+    size: 1100
   }
 ]
