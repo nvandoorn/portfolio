@@ -3,6 +3,7 @@ import { css } from 'emotion'
 import { Link } from 'gatsby'
 import { Nav } from './nav'
 import { Social } from './social'
+import { margins } from './globals'
 
 const headerStyle = css(`
   display: flex;
@@ -14,9 +15,13 @@ const headerLinkStyle = css(`
   border: none;
 `)
 
+const headerLeftStyle = css(`
+  margin: 0 0 ${margins.md}px 0;
+`)
+
 export const Header = p => (
-  <div className={headerStyle}>
-    <div>
+  <header className={headerStyle}>
+    <div className={headerLeftStyle}>
       <h1>
         <Link to="/" className={headerLinkStyle}>
           {p.siteName}
@@ -25,5 +30,5 @@ export const Header = p => (
       <Social socialEntries={p.socialEntries} />
     </div>
     <Nav links={p.links} />
-  </div>
+  </header>
 )
