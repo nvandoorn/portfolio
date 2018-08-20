@@ -3,4 +3,4 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 
-export default () => <Layout>Projects</Layout>
+export default () => <Layout>Work</Layout>

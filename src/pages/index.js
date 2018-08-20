@@ -8,7 +8,7 @@ const indexData = {
   heading: 'Hello world',
   subHeadings: [`Let's build ethical technology for reasons that matter`],
   emojiList: ['💻', '🖥', '🌎', '🚀', '💾'],
-  heroBtnTo: '/contact',
+  heroBtnTo: '/about',
   heroBtnText: (
     <>
       Get in touch <FA name="send" />
