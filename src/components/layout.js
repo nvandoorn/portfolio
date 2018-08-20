@@ -12,7 +12,7 @@ injectGlobal(`
     margin: 0;
     padding: 0;
   }
-  p, a, h1, h2, h3, h4, h5 {
+  p, a, h1, h2, h3, h4, h5, div {
     font-family: ${fontStack};
     color: ${colours.main};
   }
@@ -40,8 +40,8 @@ const siteData = {
       link: '/work'
     },
     {
-      name: 'Contact',
-      link: '/contact'
+      name: 'About',
+      link: '/about'
     }
   ],
   socialEntries: [
@@ -67,7 +67,7 @@ const siteData = {
 export default ({ children, data }) => (
   <>
     <Helmet
-      title="Hello world"
+      title="Nicholas Van Doorn"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' }
