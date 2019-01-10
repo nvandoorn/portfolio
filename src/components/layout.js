@@ -69,8 +69,8 @@ export default ({ children, data }) => (
     <Helmet
       title="Nicholas Van Doorn"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' }
+        { name: 'description', content: 'Portfolio for Nicholas Van Doorn' },
+        { name: 'keywords', content: 'software, engineer, development, web' }
       ]}
     >
       <html lang="en" />
