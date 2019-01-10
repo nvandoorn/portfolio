@@ -32,12 +32,12 @@ const siteData = {
   siteName: 'Nicholas Van Doorn',
   navLinks: [
     {
-      name: 'Projects',
-      link: '/projects'
-    },
-    {
       name: 'Work',
       link: '/work'
+    },
+    {
+      name: 'Projects',
+      link: '/projects'
     },
     {
       name: 'About',
