@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { css } from 'emotion'
+import { css } from 'react-emotion'
 import { Button } from './button'
 import { colours } from './globals'
 

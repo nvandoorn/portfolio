@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'emotion'
+import { css } from 'react-emotion'
 
 import { Tag } from './tag'
 import { DefaultButton as Button } from './button'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'emotion'
+import { css } from 'react-emotion'
 import { breakpoints, margins } from './globals'
 
 const mq = breakpoints

@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'emotion'
+import { css } from 'react-emotion'
 import FA from 'react-fontawesome'
 import { margins } from './globals'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'emotion'
+import { css } from 'react-emotion'
 import { Link } from 'gatsby'
 import { Nav } from './nav'
 import { Social } from './social'

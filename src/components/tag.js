@@ -1,6 +1,6 @@
 import React from 'react'
 import FA from 'react-fontawesome'
-import { css } from 'emotion'
+import { css } from 'react-emotion'
 import { margins, colours } from './globals'
 
 const tagIconStyle = css(`

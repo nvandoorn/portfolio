@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'emotion'
+import { css } from 'react-emotion'
 import { Link } from 'gatsby'
 
 import { margins, radius, transitions, colours } from './globals'
