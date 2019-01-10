@@ -1,6 +1,5 @@
 import React from 'react'
 import { css } from 'react-emotion'
-import FA from 'react-fontawesome'
 import { margins } from './globals'
 
 const socialEntryStyle = css(`
@@ -17,7 +16,7 @@ export const SocialEntry = p => (
     className={socialEntryStyle}
     role="button"
   >
-    <FA name={p.iconName} size={p.size} />
+    <i className={`fa fa-${p.iconName}`} />
     {p.children || null}
   </a>
 )
