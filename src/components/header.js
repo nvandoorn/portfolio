@@ -3,21 +3,24 @@ import { css } from 'react-emotion'
 import { Link } from 'gatsby'
 import { Nav } from './nav'
 import { Social } from './social'
-import { margins } from './globals'
+import { margins, breakpoints } from './globals'
 
-const headerStyle = css(`
+const headerStyle = css`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-`)
+  @media (min-width: ${breakpoints[0].breakpoint}px) {
+    justify-content: space-between;
+  }
+`
 
-const headerLinkStyle = css(`
+const headerLinkStyle = css`
   border: none;
-`)
+`
 
-const headerLeftStyle = css(`
+const headerLeftStyle = css`
   margin: 0 0 ${margins.md}px 0;
-`)
+`
 
 export const Header = p => (
   <header className={headerStyle}>
