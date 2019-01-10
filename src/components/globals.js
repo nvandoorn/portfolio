@@ -23,6 +23,10 @@ export const fontStack = 'Helvetica Neue,Helvetica,Arial,sans-serif;'
 
 export const breakpoints = [
   {
+    breakpoint: 600,
+    size: '90%'
+  },
+  {
     breakpoint: 850,
     size: 750
   },
