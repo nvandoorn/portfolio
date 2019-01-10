@@ -16,15 +16,10 @@ const projects = [
     brief: 'Functional programming in C with statically allocated memory',
     date: 'Aug 2018',
     desc: `I like functional programming and I like C, so I tried to combine the two.
-          In  reality, a simple for loop is better, but I had fun trying this.
-          Functional programming in C is difficult and verbose for two reasons:
-          all callbacks must be named (no anonymous functions), and lack of generics.
-          I tried to overcome the lack of generics by passing around void pointers,
-          but it gets confusing quickly since the caller is responsible for specifying
-          how to dereference the pointer.`,
+          In  reality, a simple for loop is better, but I had fun trying this.`,
     imgUrl: functional,
     inProd: true,
-    links: <Button to="/">Code</Button>
+    url: ''
   },
   {
     name: 'Legato Storage Service',
@@ -32,12 +27,9 @@ const projects = [
     date: 'Jun 2018 - Present',
     imgUrl: storageService,
     desc: `The Legato Linux framework offers out of the box support for
-          recording time series data into memory to be sent out later over a
-          cellular data connection (see the LWM2M spec). This is great, but lacks persistence
-          with power failure, and the onboard RAM fills up quickly when the
-          unit does not have a cellular connection. For this reason, we have created
-          a service that offers time series data storage and retrieval
-          with persistence to a file system (onboard flash or micro SD card)`
+          uploading time series data, but not storing it locally. For this reason,
+          we created this service to persist data for offline cases.`,
+    url: ''
   },
   {
     name: 'Legato GPS Monitor',
@@ -45,16 +37,24 @@ const projects = [
       'Monitor GPS in a separate process to avoid blocking single threaded apps',
     date: 'April 2018',
     imgUrl: gpsMonitor,
-    imgDropshadow: false,
-    desc: `Instead of managing and syncronizing a thread to monitor GPS location on embeded devices, this service asynchronously monitors the GPS position and allows users to retrieve it using an inter process API(see more about Legato IPC APIs here).In the future it would be cool to monitor more features from the Legato Position Service API such as velocity and 3d position.`,
-    inProd: true
+    desc: `Instead of managing and synchronizing a thread to monitor GPS location
+          on embeded devices, this service asynchronously monitors the GPS position
+          and allows users to retrieve it using an inter process API
+          (see more about Legato IPC APIs here).`,
+    inProd: true,
+    url: ''
   },
   {
     name: 'CF3 Config App',
     brief: 'Automatically configure common settings for CF3 based modules',
     date: 'April 2018',
-    desc: `Sierra Wireless offers a range of cellular modules based on a common socket with a common set of inputs and outputs.A range of commonly used input / output pins and UART connections must be configured by running an AT command over a serial connection to the CF3 based modem.Run this app once and the CF3 based module will support the full range of GPIO pins and UARTs in the Linux userspace.`,
-    inProd: true
+    desc: `Sierra Wireless offers a range of cellular modules based on a common socket with a
+          common set of inputs and outputs.A range of commonly used input / output pins and UART
+          connections must be configured by running an AT command over a serial connection to the
+          CF3 based modem.Run this app once and the CF3 based module will support the full range of
+          GPIO pins and UARTs in the Linux userspace.`,
+    inProd: true,
+    url: ''
   },
   {
     name: 'Legato Camera Driver',
@@ -65,11 +65,10 @@ const projects = [
           in Python and C++ with the purpose of running on Arduino based systems. This means
           a dependency on certain Arduino libraries for reading and writing to the serial port.
           We re-implemented the C++ driver in C without the depedence on anything
-          not included in Linux (with the exception of a few Legato specific macros).
-          I wish to improve this project regards to speed when reading images (see here)
-          and by removing the Legato specific macros (or at least define them locally).`,
+          not included in Linux (with the exception of a few Legato specific macros).`,
     imgUrl: camera,
-    inProd: true
+    inProd: true,
+    url: ''
   },
   {
     name: 'Cookbook',
@@ -77,12 +76,9 @@ const projects = [
     date: 'October 2017 - Present',
     desc: `Online dating is controversial and messy. Every other day some new app
           has an idea to fix it. I propose we simply limit peoples conversations options
-          to the bare essentials. Prove your worth, brag, and share memes. Nobody can
-          be violent or rude if we just don't let them. Cookbook is sure to address the
-          most critical online dating pitfal: how do I get these strangers to leave me alone?
-          To solve this, Cookbook comes pre-loaded with avoidance classics like
-          "I have a meeting booked with my cat" or "I'm busy fundraising".`,
-    imgUrl: cookBook
+          to the bare essentials.`,
+    imgUrl: cookBook,
+    url: ''
   },
   {
     name: 'ccss',
@@ -94,7 +90,8 @@ const projects = [
           multiple variants of the !important rule (!mostly-important, !sometimes-important,
           !not-that-important), complex vertical alignment algorithms (flex and grid kindof
           ruined this one), and mixins for 1980s style typography.`,
-    imgUrl: ''
+    imgUrl: '',
+    url: ''
   },
   {
     name: 'slask',
@@ -106,13 +103,11 @@ const projects = [
         at Forest Technology Systems (FTS), we worked on a remote weather
         station based on a single board Linux computer. During the early days, I
         spent large amounts of time transferring and filtering log files using a
-        mix of <em>scp</em>, <em>grep</em>, and <em>less</em>. This worked for
-        most developers, but other members of the team had difficulties
-        diagnosing prototype systems. For this reason, I built slask (named
-        after a co-workers typo of slack).
+        mix of <em>scp</em>, <em>grep</em>, and <em>less</em>.
       </>
     ),
-    imgUrl: slask
+    imgUrl: slask,
+    url: ''
   },
   {
     name: 'IE Media Queries',
@@ -121,7 +116,8 @@ const projects = [
     desc: `IE Media Queries is a Javascript polyfill for Internet Explorer 8's lack of
           media query support. IE8 is more or less dead and unsupported, but I still
           enjoyed re-creating unsupported functionality`,
-    imgUrl: ie
+    imgUrl: ie,
+    url: ''
   }
 ]
 
