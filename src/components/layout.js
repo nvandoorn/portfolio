@@ -46,16 +46,16 @@ const siteData = {
   ],
   socialEntries: [
     {
+      link: '//dont-trust-microsoft.nv.delivery/',
+      name: 'git-square'
+    },
+    {
       link: '//github.com/nvandoorn',
       name: 'github'
     },
     {
       link: '//twitter.com/nickvandoorn',
       name: 'twitter'
-    },
-    {
-      link: '//www.linkedin.com/in/nvdoorn/',
-      name: 'linkedin'
     },
     {
       link: '//open.spotify.com/user/pontonn',
