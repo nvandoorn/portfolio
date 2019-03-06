@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import { margins, radius, transitions, colours } from './globals'
 
 const makeButtonStyle = p =>
-  css(`
+  css`
   font-size: ${p.fontSize || '1em'};
   font-weight: ${p.fontWeight || '500'}
   margin: ${margins.sm}px;
@@ -21,7 +21,7 @@ const makeButtonStyle = p =>
     border-color: ${p.background || 'none'};
     color: ${p.hoverColour || 'initial'};
   }
-`)
+`
 
 export const Button = p => {
   const buttonStyle = makeButtonStyle(p)
