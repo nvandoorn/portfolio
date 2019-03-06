@@ -8,11 +8,20 @@ import { Header } from './header'
 import '../../node_modules/font-awesome/css/font-awesome.min.css'
 
 injectGlobal(`
-  *, html, body {
+  *,
+  html,
+  body {
     margin: 0;
     padding: 0;
   }
-  p, a, h1, h2, h3, h4, h5, div {
+  p,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  div {
     font-family: ${fontStack};
     color: ${colours.main};
   }
@@ -20,7 +29,7 @@ injectGlobal(`
     border-bottom: 1px dotted;
     text-decoration: none;
     &: hover {
-      transition: ${transitions.hover}
+      transition: ${transitions.hover};
     }
   }
   body {
@@ -45,10 +54,6 @@ const siteData = {
     }
   ],
   socialEntries: [
-    {
-      link: '//dont-trust-microsoft.nv.delivery/',
-      name: 'git-square'
-    },
     {
       link: '//github.com/nvandoorn',
       name: 'github'
