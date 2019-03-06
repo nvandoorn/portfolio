@@ -2,11 +2,11 @@ import React from 'react'
 import { css } from 'react-emotion'
 import { margins } from './globals'
 
-const socialEntryStyle = css(`
-    margin: 0 ${margins.sm}px 0 0;
-    border: none;
-    font-size: 24px;
-`)
+const socialEntryStyle = css`
+  margin: 0 ${margins.sm}px 0 0;
+  border: none;
+  font-size: 24px;
+`
 
 export const SocialEntry = p => (
   <a
