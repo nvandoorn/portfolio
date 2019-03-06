@@ -2,11 +2,10 @@ import React from 'react'
 import { css } from 'react-emotion'
 
 import { Tag } from './tag'
-import { DefaultButton as Button } from './button'
-import { margins, radius, transitions, breakpoints } from './globals'
+import { margins, breakpoints } from './globals'
 
 const projectHeadingStyle = css`
-  margin: 0 0 0 ${margins.sm}px;
+  margin: 0 ${margins.sm}px 0 0;
 `
 const projectBriefStyle = css`
   margin: 0;
@@ -26,6 +25,7 @@ const imgStyle = css`
 const linkStyle = css`
   display: flex;
   align-content: center;
+  margin: 0 ${margins.sm}px 0 0;
   padding: ${margins.sm}px 0;
   border-color: rgba(0, 0, 0, 0);
   :hover {
@@ -41,7 +41,7 @@ const descStyle = css`
 `
 
 const projectStyle = css`
-  margin: ${margins.lg}px 0;
+  margin: ${margins.lg}px 0 0 0;
 `
 
 const linkIconStyle = css`
