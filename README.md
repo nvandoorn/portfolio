@@ -1,26 +1,18 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# portfolio
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+Portfolio for Nicholas Van Doorn
 
-## Install
+## TODO
 
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
+1. Figure out button/link/tag placement for each project
+1. Finish project component (most importantly make the header wrap below a certain size)
+1. Make sure there is no horizontal scrolling on mobile
+1. Add email to social section
+1. Fix splash screen sizing and positioning
 
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
+## Goals
 
-Then you can run it by:
-```sh
-cd gatsby-example-site
-gatsby develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+1. Beautiful typography
+2. Let the work/experience speak for itself
+3. Small bundle
+4. Responsive AF
