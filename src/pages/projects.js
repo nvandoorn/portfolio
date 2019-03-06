@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { Project } from '../components/project'
-import { DefaultButton as Button } from '../components/button'
 import functional from '../images/functional.png'
 import camera from '../images/camera.png'
 import storageService from '../images/storage-service.png'
@@ -12,6 +11,14 @@ import ie from '../images/ie.png'
 
 const projects = [
   {
+    name: 'Pipefitter',
+    brief: 'Automated audits and monitioring for your ISP',
+    date: 'Nov 2018 - Present',
+    desc: `My home internet performance is really bad and my ISP never believes me.
+          Hopefully they will soon. Designed for maxium plug-ability`,
+    url: '//github.com/nvandoorn/pipefitter'
+  },
+  {
     name: 'funCtional',
     brief: 'Functional programming in C with statically allocated memory',
     date: 'Aug 2018',
@@ -19,7 +26,7 @@ const projects = [
           In  reality, a simple for loop is better, but I had fun trying this.`,
     imgUrl: functional,
     inProd: true,
-    url: ''
+    url: '//github.com/nvandoorn/functional'
   },
   {
     name: 'Legato Storage Service',
@@ -29,7 +36,7 @@ const projects = [
     desc: `The Legato Linux framework offers out of the box support for
           uploading time series data, but not storing it locally. For this reason,
           we created this service to persist data for offline cases.`,
-    url: ''
+    url: '//github.com/brnkl/legato-storage-service'
   },
   {
     name: 'Legato GPS Monitor',
@@ -42,7 +49,7 @@ const projects = [
           and allows users to retrieve it using an inter process API
           (see more about Legato IPC APIs here).`,
     inProd: true,
-    url: ''
+    url: '//github.com/brnkl/gps-monitor'
   },
   {
     name: 'CF3 Config App',
@@ -68,7 +75,7 @@ const projects = [
           not included in Linux (with the exception of a few Legato specific macros).`,
     imgUrl: camera,
     inProd: true,
-    url: ''
+    url: '//github.com/brnkl/VC0706-cam-lib'
   },
   {
     name: 'Cookbook',
@@ -78,7 +85,7 @@ const projects = [
           has an idea to fix it. I propose we simply limit peoples conversations options
           to the bare essentials.`,
     imgUrl: cookBook,
-    url: ''
+    url: '//github.com/nvandoorn/cookbook'
   },
   {
     name: 'ccss',
@@ -91,7 +98,7 @@ const projects = [
           !not-that-important), complex vertical alignment algorithms (flex and grid kindof
           ruined this one), and mixins for 1980s style typography.`,
     imgUrl: '',
-    url: ''
+    url: '//github.com/nvandoorn/ccss'
   },
   {
     name: 'slask',
@@ -107,7 +114,7 @@ const projects = [
       </>
     ),
     imgUrl: slask,
-    url: ''
+    url: '//github.com/nvandoorn/slask'
   },
   {
     name: 'IE Media Queries',
@@ -117,7 +124,7 @@ const projects = [
           media query support. IE8 is more or less dead and unsupported, but I still
           enjoyed re-creating unsupported functionality`,
     imgUrl: ie,
-    url: ''
+    url: '//github.com/nvandoorn/IEMediaQueries'
   }
 ]
 
