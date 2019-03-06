@@ -83,10 +83,15 @@ export const Project = p => {
     <article className={projectStyle}>
       <div className={projectHeadingContainerStyle}>
         <div className={projectTagContainerStyle}>
-          <a className={linkStyle} href={p.url}>
+          <a
+            className={linkStyle}
+            href={p.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className={linkIconStyle}>
-              <i className="fa fa-link" />
               <h2 className={projectHeadingStyle}>{p.name}</h2>
+              <i className="fa fa-link" />
             </div>
           </a>
           {p.inProd ? <Tag fontSize="0.8em">In Prod</Tag> : null}
