@@ -2,6 +2,8 @@ import React from 'react'
 import { css } from 'react-emotion'
 import { margins } from './globals'
 
+import { FontAwesome } from './font-awesome'
+
 const socialEntryStyle = css`
   margin: 0 ${margins.sm}px 0 0;
   border: none;
@@ -16,7 +18,7 @@ export const SocialEntry = p => (
     className={socialEntryStyle}
     role="button"
   >
-    <i className={`fa fa-${p.iconName}`} />
+    <FontAwesome name={p.iconName} />
     {p.children || null}
   </a>
 )

@@ -2,6 +2,7 @@ import React from 'react'
 import { css } from 'react-emotion'
 
 import { Tag } from './tag'
+import { FontAwesome } from './font-awesome'
 import { margins, breakpoints } from './globals'
 
 const projectHeadingStyle = css`
@@ -91,7 +92,7 @@ export const Project = p => {
           >
             <div className={linkIconStyle}>
               <h2 className={projectHeadingStyle}>{p.name}</h2>
-              <i className="fa fa-link" />
+              <FontAwesome name="link" />
             </div>
           </a>
           {p.inProd ? <Tag fontSize="0.8em">In Prod</Tag> : null}
