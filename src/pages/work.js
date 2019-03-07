@@ -7,7 +7,7 @@ const workHistory = [
   {
     name: 'Software Lead',
     brief: 'BRNKL by Barnacle Systems',
-    date: 'Sept 2017 - Present',
+    date: 'Sept 2017 - Feb 2019',
     desc: '',
     imgUrl: '',
     url: '//brnkl.io'
