@@ -3,17 +3,17 @@ import { css } from 'react-emotion'
 import { Link } from 'gatsby'
 import { margins } from './globals'
 
-const navStyle = css(`
+const navStyle = css`
   display: flex;
   align-items: center;
   margin: 0 0 ${margins.md}px 0;
-`)
+`
 
 export const Nav = p => {
-  const linkStyle = css(`
+  const linkStyle = css`
     padding: 0 ${margins.md}px ${margins.md}px ${margins.md}px;
     &:not(:last-child) {
-      margin: 0 ${margins.sm}px 0 0
+      margin: 0 ${margins.sm}px 0 0;
     }
     text-decoration: none;
     border: ${p.hoverBorder};
@@ -21,7 +21,7 @@ export const Nav = p => {
     &:hover {
       border-color: initial;
     }
-  `)
+  `
   return (
     <nav className={navStyle}>
       {p.links
