@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 import { Link } from 'gatsby'
 
 import { margins, radius, transitions, colours } from './globals'
@@ -26,7 +26,7 @@ const makeButtonStyle = p =>
 export const Button = p => {
   const buttonStyle = makeButtonStyle(p)
   return (
-    <Link to={p.to} className={buttonStyle} role="button">
+    <Link to={p.to} css={buttonStyle} role="button">
       {p.children}
     </Link>
   )

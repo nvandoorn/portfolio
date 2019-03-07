@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 
 import { Tag } from './tag'
 import { FontAwesome } from './font-awesome'
@@ -81,34 +81,34 @@ export const Project = p => {
     }
   `
   return (
-    <article className={projectStyle}>
-      <div className={projectHeadingContainerStyle}>
-        <div className={projectTagContainerStyle}>
+    <article css={projectStyle}>
+      <div css={projectHeadingContainerStyle}>
+        <div css={projectTagContainerStyle}>
           <a
-            className={linkStyle}
+            css={linkStyle}
             href={p.url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className={linkIconStyle}>
-              <h2 className={projectHeadingStyle}>{p.name}</h2>
+            <div css={linkIconStyle}>
+              <h2 css={projectHeadingStyle}>{p.name}</h2>
               <FontAwesome name="link" />
             </div>
           </a>
           {p.inProd ? <Tag fontSize="0.8em">In Prod</Tag> : null}
         </div>
-        <p className={dateStyle}>{p.date}</p>
+        <p css={dateStyle}>{p.date}</p>
       </div>
-      <h3 className={projectBriefStyle}>{p.brief}</h3>
-      <div className={projectBlockStyle}>
+      <h3 css={projectBriefStyle}>{p.brief}</h3>
+      <div css={projectBlockStyle}>
         {p.imgUrl ? (
-          <div className={imgContainerStyle}>
-            <img src={p.imgUrl} alt={p.imgAlt} className={imgStyle} />
+          <div css={imgContainerStyle}>
+            <img src={p.imgUrl} alt={p.imgAlt} css={imgStyle} />
           </div>
         ) : null}
         {p.desc ? (
-          <div className={descContainerStyle}>
-            <p className={descStyle}>{p.desc}</p>
+          <div css={descContainerStyle}>
+            <p css={descStyle}>{p.desc}</p>
             {p.links ? p.links : null}
           </div>
         ) : null}

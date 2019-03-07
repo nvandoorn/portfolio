@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 
 import { margins } from './globals'
 
@@ -16,10 +16,10 @@ const taglineStyle = css`
 `
 
 export const Personal = ({ name, email, imgUrl, imgAlt, tagline }) => (
-  <article className={personalStyle}>
+  <article css={personalStyle}>
     {name}
-    <img src={imgUrl} alt={imgAlt} className={photoStyle} />
-    <h3 className={taglineStyle}>{tagline}</h3>
+    <img src={imgUrl} alt={imgAlt} css={photoStyle} />
+    <h3 css={taglineStyle}>{tagline}</h3>
     {email}
   </article>
 )

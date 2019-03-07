@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 
 import { breakpoints } from './globals'
 
@@ -15,5 +15,5 @@ const splitSyle = css`
 `
 
 export const SplitContainer = ({ children }) => (
-  <div className={splitSyle}>{children}</div>
+  <div css={splitSyle}>{children}</div>
 )

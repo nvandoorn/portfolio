@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 import { margins } from './globals'
 
 const { md, lg } = margins
@@ -15,7 +15,7 @@ const aboutListStyle = css`
 `
 
 export const AboutEntry = ({ header, listItems }) => (
-  <article className={aboutListStyle}>
+  <article css={aboutListStyle}>
     <h2>{header}</h2>
     {listItems ? (
       <ul>

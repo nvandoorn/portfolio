@@ -1,6 +1,6 @@
 import React from 'react'
-import FA from 'react-fontawesome'
 
+import { FontAwesome } from '../components/font-awesome'
 import Layout from '../components/layout'
 import { Splash } from '../components/splash'
 
@@ -11,7 +11,7 @@ const indexData = {
   heroBtnTo: '/about',
   heroBtnText: (
     <>
-      Get in touch <FA name="send" />
+      Get in touch <FontAwesome name="send" />
     </>
   )
 }

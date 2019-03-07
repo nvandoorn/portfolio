@@ -1,5 +1,5 @@
 import React from 'react'
 
-export const FontAwesome = ({ name }) => (
-  <i className={`fa fa-${name}`} aria-hidden="true" />
+export const FontAwesome = ({ name, css }) => (
+  <i css={`fa fa-${name} ${css || ''}`} aria-hidden="true" />
 )

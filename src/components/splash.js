@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 import { Button } from './button'
 import { colours } from './globals'
 
@@ -29,18 +29,18 @@ const subHeadingStyle = css({
 
 export class Splash extends Component {
   render = () => (
-    <div className={splashStyle}>
+    <div css={splashStyle}>
       <div>
-        <h2 className={headingStyle}>{this.props.heading} </h2>
+        <h2 css={headingStyle}>{this.props.heading} </h2>
         {this.props.subHeadings
           ? this.props.subHeadings.map(subHeading => (
-              <h3 key={subHeading} className={subHeadingStyle}>
+              <h3 key={subHeading} css={subHeadingStyle}>
                 {subHeading}
               </h3>
             ))
           : null}
       </div>
-      <div className={buttonContainer}>
+      <div css={buttonContainer}>
         <Button
           fontSize="1.5em"
           fontWeight="800"

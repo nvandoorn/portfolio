@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 import { Link } from 'gatsby'
 import { margins } from './globals'
 
@@ -23,11 +23,11 @@ export const Nav = p => {
     }
   `
   return (
-    <nav className={navStyle}>
+    <nav css={navStyle}>
       {p.links
         ? p.links.map(({ name, link }) => (
             <Link
-              className={linkStyle}
+              css={linkStyle}
               to={link}
               key={link}
               activeStyle={{ borderColor: 'initial' }}

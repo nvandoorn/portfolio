@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 import { breakpoints, margins } from './globals'
 
 const mq = breakpoints
@@ -20,4 +20,4 @@ const containerStyle = css`
   ${mq}
 `
 
-export const Container = p => <div className={containerStyle}>{p.children}</div>
+export const Container = p => <div css={containerStyle}>{p.children}</div>

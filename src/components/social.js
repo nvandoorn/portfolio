@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 import { margins } from './globals'
 
 import { FontAwesome } from './font-awesome'
@@ -15,7 +15,7 @@ export const SocialEntry = p => (
     href={p.href}
     target="_blank"
     rel="noopener noreferrer"
-    className={socialEntryStyle}
+    css={socialEntryStyle}
     role="button"
   >
     <FontAwesome name={p.iconName} />

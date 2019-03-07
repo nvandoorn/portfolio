@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'react-emotion'
+import { css } from '@emotion/core'
 import { Link } from 'gatsby'
 import { Nav } from './nav'
 import { Social } from './social'
@@ -23,10 +23,10 @@ const headerLeftStyle = css`
 `
 
 export const Header = p => (
-  <header className={headerStyle}>
-    <div className={headerLeftStyle}>
+  <header css={headerStyle}>
+    <div css={headerLeftStyle}>
       <h1>
-        <Link to="/" className={headerLinkStyle}>
+        <Link to="/" css={headerLinkStyle}>
           {p.siteName}
         </Link>
       </h1>

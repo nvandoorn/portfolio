@@ -1,6 +1,6 @@
 import React from 'react'
-import FA from 'react-fontawesome'
-import { css } from 'react-emotion'
+import { FontAwesome } from '../components/font-awesome'
+import { css } from '@emotion/core'
 import { margins, colours } from './globals'
 
 const tagIconStyle = css`
@@ -18,8 +18,8 @@ export const Tag = p => {
     line-height: 1.5em;
   `
   return (
-    <div className={tagStyle}>
-      <FA name="tag" className={tagIconStyle} />
+    <div css={tagStyle}>
+      <FontAwesome name="tag" css={tagIconStyle} />
       {p.children}
     </div>
   )
