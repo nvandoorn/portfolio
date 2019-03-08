@@ -1,6 +1,8 @@
 import React from 'react'
+
 import Layout from '../components/layout'
 import { Project } from '../components/project'
+
 import functional from '../images/functional.png'
 import camera from '../images/camera.png'
 import storageService from '../images/storage-service.png'
@@ -11,12 +13,26 @@ import ie from '../images/ie.png'
 
 const projects = [
   {
+    name: 'naive',
+    brief: 'A naive implementation of a NoSQL database',
+    date: 'Jan 2019 - Present',
+    desc: '',
+    url: ''
+  },
+  {
     name: 'Pipefitter',
     brief: 'Automated audits and monitioring for your ISP',
     date: 'Nov 2018 - Present',
     desc: `My home internet performance is really bad and my ISP never believes me.
           Hopefully they will soon. Designed for maxium plug-ability`,
     url: '//github.com/nvandoorn/pipefitter'
+  },
+  {
+    name: 'JavaScript Can Do Anything',
+    brief: '',
+    date: 'Oct 2018',
+    desc: '',
+    url: ''
   },
   {
     name: 'funCtional',

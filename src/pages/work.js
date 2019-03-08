@@ -5,7 +5,7 @@ import { Project } from '../components/project'
 
 const workHistory = [
   {
-    name: 'Software Lead',
+    name: 'Lead Software Developer',
     brief: 'BRNKL by Barnacle Systems',
     date: 'Sept 2017 - Feb 2019',
     desc: '',
@@ -16,18 +16,7 @@ const workHistory = [
     name: 'Software Developer, Contract',
     brief: 'BRNKL by Barnacle Systems',
     date: 'Jul 2017 - Sept 2017',
-    desc: (
-      <>
-        After leaving FTS, one of my colleagues shared some details about a side
-        project he was working on. His boat broke moorage earlier that year, so
-        he got to work building a product to remotely monitor and track boats. I
-        completed two 80 hour contracts for Barnacle Systems, each focused on
-        the app, with some work on the infrastructure and integration, but no
-        work on the hardware itself (i.e firmware). This time was sufficient to
-        deliver the complete set of features required for the minimum viable
-        product.
-      </>
-    ),
+    desc: <></>,
     imgUrl: '',
     url: '//brnkl.io'
   },

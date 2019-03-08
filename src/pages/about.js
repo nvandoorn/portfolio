@@ -3,6 +3,7 @@ import { css } from '@emotion/core'
 
 import Layout from '../components/layout'
 import { AboutEntry } from '../components/about-entry'
+import { FontAwesome } from '../components/font-awesome'
 import { Personal } from '../components/personal'
 import { SplitContainer } from '../components/split-container'
 import { margins } from '../components/globals'
@@ -18,7 +19,7 @@ const aboutLists = [
   {
     header: (
       <>
-        Values and Ethics <i css="fa fa-heart" />
+        Values and Ethics <FontAwesome name="heart" />
       </>
     ),
     listItems: [
@@ -30,7 +31,7 @@ const aboutLists = [
   {
     header: (
       <>
-        Skills and Experience <i css="fa fa-map" />
+        Skills and Experience <FontAwesome name="map" />
       </>
     ),
     listItems: [
@@ -44,7 +45,7 @@ const aboutLists = [
   {
     header: (
       <>
-        Tools <i css="fa fa-wrench" />
+        Tools <FontAwesome name="wrench" />
       </>
     ),
     listItems: [
@@ -57,7 +58,7 @@ const aboutLists = [
   {
     header: (
       <>
-        Future Learning Ideas <i css="fa fa-flask" />
+        Future Learning Ideas <FontAwesome name="flask" />
       </>
     ),
     listItems: [
