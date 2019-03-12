@@ -2,8 +2,6 @@ import React from 'react'
 import { css } from '@emotion/core'
 import { margins } from './globals'
 
-import { FontAwesome } from './font-awesome'
-
 const socialEntryStyle = css`
   margin: 0 ${margins.sm}px 0 0;
   border: none;
@@ -18,15 +16,15 @@ export const SocialEntry = p => (
     css={socialEntryStyle}
     role="button"
   >
-    <FontAwesome name={p.iconName} />
+    {p.icon}
     {p.children || null}
   </a>
 )
 
 export const Social = p => (
   <div>
-    {p.socialEntries.map(({ link, name }) => (
-      <SocialEntry href={link} iconName={name} key={name} />
+    {p.socialEntries.map(({ link, name, icon }) => (
+      <SocialEntry href={link} icon={icon} key={name} />
     ))}
   </div>
 )

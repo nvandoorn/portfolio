@@ -1,5 +1,6 @@
 import React from 'react'
-import { FontAwesome } from '../components/font-awesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTag } from '@fortawesome/free-solid-svg-icons/faTag'
 import { css } from '@emotion/core'
 import { margins, colours } from './globals'
 
@@ -19,7 +20,7 @@ export const Tag = p => {
   `
   return (
     <div css={tagStyle}>
-      <FontAwesome name="tag" css={tagIconStyle} />
+      <FontAwesomeIcon icon={faTag} css={tagIconStyle} />
       {p.children}
     </div>
   )

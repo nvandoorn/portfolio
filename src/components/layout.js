@@ -2,10 +2,15 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { css, Global } from '@emotion/core'
 import { colours, fontStack, transitions } from './globals'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faSpotify,
+  faGithub,
+  faTwitter
+} from '@fortawesome/free-brands-svg-icons'
+
 import { Container } from './container'
 import { Header } from './header'
-
-import '../../node_modules/font-awesome/css/font-awesome.min.css'
 
 const globalStyles = css`
   *,
@@ -56,15 +61,18 @@ const siteData = {
   socialEntries: [
     {
       link: '//github.com/nvandoorn',
-      name: 'github'
+      name: 'github',
+      icon: <FontAwesomeIcon icon={faGithub} />
     },
     {
       link: '//twitter.com/nickvandoorn',
-      name: 'twitter'
+      name: 'twitter',
+      icon: <FontAwesomeIcon icon={faTwitter} />
     },
     {
       link: '//open.spotify.com/user/pontonn',
-      name: 'spotify'
+      name: 'spotify',
+      icon: <FontAwesomeIcon icon={faSpotify} />
     }
   ]
 }

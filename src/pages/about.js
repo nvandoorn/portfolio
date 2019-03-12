@@ -1,8 +1,15 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faHeart,
+  faMap,
+  faWrench,
+  faFlask,
+  faEnvelope
+} from '@fortawesome/free-solid-svg-icons'
 
 import Layout from '../components/layout'
 import { AboutEntry } from '../components/about-entry'
-import { FontAwesome } from '../components/font-awesome'
 import { Personal } from '../components/personal'
 import { SplitContainer } from '../components/split-container'
 
@@ -28,7 +35,7 @@ const aboutLists = [
   {
     header: (
       <>
-        Values and Ethics <FontAwesome name="heart" />
+        Values and Ethics <FontAwesomeIcon icon={faHeart} />
       </>
     ),
     listItems: [
@@ -41,7 +48,7 @@ const aboutLists = [
   {
     header: (
       <>
-        Skills and Experience <FontAwesome name="map" />
+        Skills and Experience <FontAwesomeIcon icon={faMap} />
       </>
     ),
     listItems: skills
@@ -49,7 +56,7 @@ const aboutLists = [
   {
     header: (
       <>
-        Tools <FontAwesome name="wrench" />
+        Tools <FontAwesomeIcon icon={faWrench} />
       </>
     ),
     listItems: tools
@@ -57,7 +64,7 @@ const aboutLists = [
   {
     header: (
       <>
-        Future Learning Ideas <FontAwesome name="flask" />
+        Future Learning Ideas <FontAwesomeIcon icon={faFlask} />
       </>
     ),
     listItems: [
@@ -81,7 +88,7 @@ const personalProps = {
   imgUrl: profilePic,
   email: (
     <p>
-      <FontAwesome name="envelope-o" /> nick <em>at</em> nv <em>dot</em>{' '}
+      <FontAwesomeIcon icon={faEnvelope} /> nick <em>at</em> nv <em>dot</em>{' '}
       delivery
     </p>
   )
