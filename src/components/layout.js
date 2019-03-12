@@ -69,7 +69,7 @@ const siteData = {
   ]
 }
 
-export default ({ children, data }) => (
+export default ({ children, height }) => (
   <>
     <Global styles={globalStyles} />
     <Helmet
@@ -81,7 +81,7 @@ export default ({ children, data }) => (
     >
       <html lang="en" />
     </Helmet>
-    <Container>
+    <Container height={height}>
       <Header
         siteName={siteData.siteName}
         links={siteData.navLinks}
