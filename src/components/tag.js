@@ -10,7 +10,7 @@ const tagIconStyle = css`
 
 export const Tag = p => {
   const tagStyle = css`
-    margin: 0;
+    margin: ${margins.sm}px 0;
     padding: ${margins.xsm}px;
     border-radius: 5px;
     color: ${colours.background};
