@@ -57,6 +57,10 @@ const globalStyles = css`
   body {
     background: ${colours.background};
   }
+  // TODO remove this hack (FontAwesome SVGs are huge on load)
+  .svg-inline--fa {
+    max-height: 50px;
+  }
 `
 
 const siteData = {
