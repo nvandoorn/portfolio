@@ -78,17 +78,17 @@ const siteData = {
   socialEntries: [
     {
       link: '//github.com/nvandoorn',
-      name: 'github',
+      name: 'GitHub',
       icon: <FontAwesomeIcon icon={faGithub} />
     },
     {
       link: '//twitter.com/nickvandoorn',
-      name: 'twitter',
+      name: 'Twitter',
       icon: <FontAwesomeIcon icon={faTwitter} />
     },
     {
       link: '//open.spotify.com/user/pontonn',
-      name: 'spotify',
+      name: 'Spotify',
       icon: <FontAwesomeIcon icon={faSpotify} />
     }
   ]
