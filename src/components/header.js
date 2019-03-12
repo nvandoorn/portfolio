@@ -25,7 +25,11 @@ const headerLeftStyle = css`
 export const Header = p => (
   <header css={headerStyle}>
     <div css={headerLeftStyle}>
-      <h1>
+      <h1
+        css={css`
+          margin: 0;
+        `}
+      >
         <Link to="/" css={headerLinkStyle}>
           {p.siteName}
         </Link>
