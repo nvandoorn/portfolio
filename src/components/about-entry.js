@@ -2,16 +2,8 @@ import React from 'react'
 import { css } from '@emotion/core'
 import { margins } from './globals'
 
-const { md, lg } = margins
-
 const aboutListStyle = css`
-  margin: ${lg}px 0 0 0;
-  & ul {
-    list-style-type: none;
-    & li {
-      margin: ${md}px 0;
-    }
-  }
+  margin: ${margins.lg}px 0 0 0;
 `
 
 export const AboutEntry = ({ header, listItems }) => (
