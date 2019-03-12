@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { css, Global } from '@emotion/core'
-import { colours, fontStack, transitions } from './globals'
+import { colours, fontStack, transitions, margins } from './globals'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faSpotify,
@@ -29,6 +29,23 @@ const globalStyles = css`
   div {
     font-family: ${fontStack};
     color: ${colours.main};
+  }
+  h1,
+  h2 {
+    margin: 0 0 ${margins.lg}px 0;
+  }
+  h3 {
+    margin: 0 0 ${margins.md}px 0;
+  }
+  h4,
+  h5 {
+    margin: 0 0 ${margins.sm}px 0;
+  }
+  ul {
+    list-style-type: none;
+  }
+  ul li:not(:first-of-type):not(:last-child) {
+    margin: ${margins.md}px 0;
   }
   a {
     border-bottom: 1px dotted;
