@@ -108,7 +108,7 @@ export const Project = p => {
         ) : null}
         {p.desc ? (
           <div css={descContainerStyle}>
-            <p css={descStyle}>{p.desc}</p>
+            <div css={descStyle}>{p.desc}</div>
             {p.links ? p.links : null}
           </div>
         ) : null}
