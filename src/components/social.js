@@ -10,6 +10,7 @@ const socialEntryStyle = css`
 
 export const SocialEntry = p => (
   <a
+    aria-label={p.name}
     href={p.href}
     target="_blank"
     rel="noopener noreferrer"
@@ -24,7 +25,7 @@ export const SocialEntry = p => (
 export const Social = p => (
   <div>
     {p.socialEntries.map(({ link, name, icon }) => (
-      <SocialEntry href={link} icon={icon} key={name} />
+      <SocialEntry href={link} icon={icon} key={name} name={name} />
     ))}
   </div>
 )
