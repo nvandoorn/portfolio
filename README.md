@@ -29,3 +29,4 @@ Portfolio for Nicholas Van Doorn
 
 1. Loading page from URL does not apply `selected` css class to respective nav item
 1. Negative margin on the nav causes it to wrap after already touching the header
+1. Fonts on Windows do not look great, Linux story likely is not much better
