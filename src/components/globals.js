@@ -32,7 +32,7 @@ export const breakpoints = [
   },
   {
     breakpoint: '992px',
-    size: '970px'
+    size: '920px'
   },
   {
     breakpoint: '1170px',
