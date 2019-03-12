@@ -1,13 +1,13 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { injectGlobal } from 'emotion'
+import { css, Global } from '@emotion/core'
 import { colours, fontStack, transitions } from './globals'
 import { Container } from './container'
 import { Header } from './header'
 
 import '../../node_modules/font-awesome/css/font-awesome.min.css'
 
-injectGlobal(`
+const globalStyles = css`
   *,
   html,
   body {
@@ -35,7 +35,7 @@ injectGlobal(`
   body {
     background: ${colours.background};
   }
-`)
+`
 
 const siteData = {
   siteName: 'Nicholas Van Doorn',
@@ -71,6 +71,7 @@ const siteData = {
 
 export default ({ children, data }) => (
   <>
+    <Global styles={globalStyles} />
     <Helmet
       title="Nicholas Van Doorn"
       meta={[
