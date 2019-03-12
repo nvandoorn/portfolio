@@ -9,7 +9,7 @@ const headerStyle = css`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  @media (min-width: ${breakpoints[0].breakpoint}px) {
+  @media (min-width: ${breakpoints[0].breakpoint}) {
     justify-content: space-between;
   }
 `
