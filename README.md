@@ -16,6 +16,7 @@ Portfolio for Nicholas Van Doorn
 1. (content) Add links to tools on about page
 1. (content) Compose BRNKL descriptions
 1. (build) Write a build step to render a PDF from the `/cv` page
+1. (style) Write components or theme for cv content
 1. (style) Design a fucking stellar splash screen
 
 ## Testing
@@ -27,5 +28,4 @@ Portfolio for Nicholas Van Doorn
 ## Bugs
 
 1. Loading page from URL does not apply `selected` css class to respective nav item
-1. "In prod" tag does not wrap around properly
-1. When the nav wraps "under" the heading, the left alignment with the heading looks weird (despite being positioned "correctly")
+1. Negative margin on the nav causes it to wrap after already touching the header
