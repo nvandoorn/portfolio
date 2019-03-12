@@ -16,7 +16,6 @@ const projectBriefStyle = css`
 `
 
 const projectBlockStyle = css`
-  margin: ${margins.md}px 0;
   display: flex;
   flex-wrap: wrap;
 `
