@@ -54,7 +54,7 @@ const linkIconStyle = css`
 const projectHeadingContainerStyle = css`
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: ${margins.md}px;
   flex-wrap: wrap;
 `
