@@ -7,17 +7,26 @@ import functional from '../images/functional.png'
 import camera from '../images/camera.png'
 import storageService from '../images/storage-service.png'
 import gpsMonitor from '../images/gps-monitor.png'
-import cookBook from '../images/cookbook.png'
 import slask from '../images/slask.png'
 import ie from '../images/ie.png'
 
-const projects = [
+export const projects = [
+  {
+    name: 'cnaked',
+    brief:
+      'A Battlesnake so close to the metal, 6 CVEs have been opened while reading',
+    date: 'Feb 2019 - Present',
+    desc: 'I tried to make a really fast snake',
+    url: '//github.com/nvandoorn/cnaked'
+  },
   {
     name: 'naive',
     brief: 'A naive implementation of a NoSQL database',
     date: 'Jan 2019 - Present',
-    desc: '',
-    url: ''
+    desc:
+      'Use this database in prod and you will be on the news for the wrong reasons',
+    url: '//github.com/nvandoorn/naive',
+    showOnCv: true
   },
   {
     name: 'Pipefitter',
@@ -25,14 +34,8 @@ const projects = [
     date: 'Nov 2018 - Present',
     desc: `My home internet performance is really bad and my ISP never believes me.
           Hopefully they will soon. Designed for maxium plug-ability`,
-    url: '//github.com/nvandoorn/pipefitter'
-  },
-  {
-    name: 'JavaScript Can Do Anything',
-    brief: '',
-    date: 'Oct 2018',
-    desc: '',
-    url: ''
+    url: '//github.com/nvandoorn/pipefitter',
+    showOnCv: true
   },
   {
     name: 'funCtional',
@@ -65,7 +68,8 @@ const projects = [
           and allows users to retrieve it using an inter process API
           (see more about Legato IPC APIs here).`,
     inProd: true,
-    url: '//github.com/brnkl/gps-monitor'
+    url: '//github.com/brnkl/gps-monitor',
+    showOnCv: true
   },
   {
     name: 'CF3 Config App',
@@ -91,17 +95,8 @@ const projects = [
           not included in Linux (with the exception of a few Legato specific macros).`,
     imgUrl: camera,
     inProd: true,
-    url: '//github.com/brnkl/VC0706-cam-lib'
-  },
-  {
-    name: 'Cookbook',
-    brief: 'Match with strangers and chat using pre-defined messages',
-    date: 'October 2017 - Present',
-    desc: `Online dating is controversial and messy. Every other day some new app
-          has an idea to fix it. I propose we simply limit peoples conversations options
-          to the bare essentials.`,
-    imgUrl: cookBook,
-    url: '//github.com/nvandoorn/cookbook'
+    url: '//github.com/brnkl/VC0706-cam-lib',
+    showOnCv: true
   },
   {
     name: 'ccss',
@@ -109,10 +104,7 @@ const projects = [
     date: 'Jul 2017',
     links: '',
     desc: `ccss transforms the correct spelling of colour to color in your CSS. This was intended
-          to be part one of a series of awful CSS transforms. Other transform ideas include:
-          multiple variants of the !important rule (!mostly-important, !sometimes-important,
-          !not-that-important), complex vertical alignment algorithms (flex and grid kindof
-          ruined this one), and mixins for 1980s style typography.`,
+          to be part one of a series of awful CSS transforms.`,
     imgUrl: '',
     url: '//github.com/nvandoorn/ccss'
   },
