@@ -1,12 +1,14 @@
 import React from 'react'
 import { css } from '@emotion/core'
 import { Link } from 'gatsby'
-import { margins } from './globals'
+import { margins, breakpoints } from './globals'
 
 const navStyle = css`
   display: flex;
   align-items: center;
-  margin: 0 0 ${margins.md}px 0;
+  // TODO find a better way to handle
+  // "collapse" of padding when flex "wrapping"
+  margin: 0 0 ${margins.md}px -${margins.md}px;
 `
 
 export const Nav = p => {
