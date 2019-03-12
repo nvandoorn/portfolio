@@ -4,7 +4,7 @@ import { breakpoints, margins } from './globals'
 
 const mq = breakpoints
   .map(
-    ({ breakpoint, size }) => css`
+    ({ breakpoint, size }) => `
       @media (min-width: ${breakpoint}) {
         width: ${size};
       }
