@@ -1,6 +1,6 @@
 export const colours = {
   background: '#0484EA',
-  main: '#ffffff'
+  main: '#FFFFFF'
 }
 
 export const margins = {
@@ -23,19 +23,19 @@ export const fontStack = 'Helvetica Neue,Helvetica,Arial,sans-serif;'
 
 export const breakpoints = [
   {
-    breakpoint: 600,
+    breakpoint: '600px',
     size: '90%'
   },
   {
-    breakpoint: 850,
-    size: 750
+    breakpoint: '850px',
+    size: '750px'
   },
   {
-    breakpoint: 992,
-    size: 970
+    breakpoint: '992px',
+    size: '970px'
   },
   {
-    breakpoint: 1170,
-    size: 1100
+    breakpoint: '1170px',
+    size: '1100px'
   }
 ]
