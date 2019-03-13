@@ -20,7 +20,7 @@ export const Splash = p => (
   <article css={splashContainerStyle}>
     <h2 css={taglineStyle}>{p.heroText}</h2>
     <Button
-      fontSize="1.5em"
+      fontSize="1.2em"
       fontWeight="800"
       background={colours.background}
       hoverBackground={colours.main}
