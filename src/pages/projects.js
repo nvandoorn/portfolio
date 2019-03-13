@@ -30,10 +30,10 @@ export const projects = [
   },
   {
     name: 'Pipefitter',
-    brief: 'Automated audits and monitioring for your ISP',
+    brief: 'Automated audits and monitoring for your ISP',
     date: 'Nov 2018 - Present',
     desc: `My home internet performance is really bad and my ISP never believes me.
-          Hopefully they will soon. Designed for maxium plug-ability`,
+          Hopefully they will soon. Designed for maximum plug-ability`,
     url: '//github.com/nvandoorn/pipefitter',
     showOnCv: true
   },
@@ -64,7 +64,7 @@ export const projects = [
     date: 'April 2018',
     imgUrl: gpsMonitor,
     desc: `Instead of managing and synchronizing a thread to monitor GPS location
-          on embeded devices, this service asynchronously monitors the GPS position
+          on embedded devices, this service asynchronously monitors the GPS position
           and allows users to retrieve it using an inter process API
           (see more about Legato IPC APIs here).`,
     inProd: true,
@@ -91,7 +91,7 @@ export const projects = [
           (serial port based).The seller, Adafruit, supplies open source drivers implemented
           in Python and C++ with the purpose of running on Arduino based systems. This means
           a dependency on certain Arduino libraries for reading and writing to the serial port.
-          We re-implemented the C++ driver in C without the depedence on anything
+          We re-implemented the C++ driver in C without the dependence on anything
           not included in Linux (with the exception of a few Legato specific macros).`,
     imgUrl: camera,
     inProd: true,

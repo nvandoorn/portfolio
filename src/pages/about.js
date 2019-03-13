@@ -20,7 +20,7 @@ export const skills = [
   'Deploying function based infrastructure',
   'Designing software systems as modules with interfaces',
   'Orchestrating fleets of cellular devices',
-  'Designing and implementing embeded software'
+  'Designing and implementing embedded software'
 ]
 
 export const tools = [
@@ -70,8 +70,8 @@ const aboutLists = [
     listItems: [
       `Learn more languages. I love deriving influence from all languages. I would love to learn more
       about Ruby, Go, Rust, Smalltalk, ReasonML, and Elixir.`,
-      `Write a drvier using the Linux framebuffer API. Although I never want to
-      specialize in operating sytems, learning about them is fascinating and
+      `Write a driver using the Linux framebuffer API. Although I never want to
+      specialize in operating systems, learning about them is fascinating and
       helps me write better code at all levels of abstraction.`,
       `Implement TCP from scratch in C (bonus for x86 Assembly). We send a lot of data over the network
       so I want to zoom in on how it's done.`,
