@@ -8,6 +8,7 @@ const splashContainerStyle = css`
   height: 100%;
   display: flex;
   align-content: center;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 `
