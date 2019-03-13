@@ -8,6 +8,7 @@ import { margins, breakpoints } from './globals'
 const headerStyle = css`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   @media (min-width: ${breakpoints[0].breakpoint}) {
     justify-content: space-between;
