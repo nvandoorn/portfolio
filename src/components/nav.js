@@ -6,9 +6,6 @@ import { margins } from './globals'
 const navStyle = css`
   display: flex;
   align-items: center;
-  // TODO find a better way to handle
-  // "collapse" of padding when flex "wrapping"
-  margin: 0 0 0 -${margins.md}px;
 `
 
 export const Nav = p => {
