@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faSpotify,
   faGithub,
-  faTwitter
+  faTwitter,
+  faKeybase
 } from '@fortawesome/free-brands-svg-icons'
 
 import { Container } from './container'
@@ -81,17 +82,22 @@ const siteData = {
   ],
   socialEntries: [
     {
-      link: '//github.com/nvandoorn',
+      href: '//github.com/nvandoorn',
       name: 'GitHub',
       icon: <FontAwesomeIcon icon={faGithub} />
     },
     {
-      link: '//twitter.com/nickvandoorn',
+      href: '//twitter.com/nickvandoorn',
       name: 'Twitter',
       icon: <FontAwesomeIcon icon={faTwitter} />
     },
     {
-      link: '//open.spotify.com/user/pontonn',
+      href: '//keybase.io/nvandoorn',
+      name: 'Keybase',
+      icon: <FontAwesomeIcon icon={faKeybase} />
+    },
+    {
+      href: '//open.spotify.com/user/pontonn',
       name: 'Spotify',
       icon: <FontAwesomeIcon icon={faSpotify} />
     }
