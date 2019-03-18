@@ -35,13 +35,6 @@ const linkStyle = css`
   }
 `
 
-const imgContainerStyle = css``
-
-const descStyle = css`
-  font-weight: 300;
-  line-height: 2em;
-`
-
 const projectStyle = css`
   margin: ${margins.lg}px 0 0 0;
 `
