@@ -28,7 +28,7 @@ const linkStyle = css`
   display: flex;
   align-content: center;
   margin: 0 ${margins.sm}px 0 0;
-  padding: ${margins.sm}px 0;
+  padding: 0 0 ${margins.sm}px 0;
   border-color: rgba(0, 0, 0, 0);
   :hover {
     border-color: #ffffff;
