@@ -37,7 +37,7 @@ const globalStyles = css`
   }
   li {
     list-style-type: circle;
-    list-style-position: inside;
+    list-style-position: outside;
   }
   a {
     border-bottom: 1px dotted;
