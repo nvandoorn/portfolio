@@ -1,7 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
 
-import { breakpoints } from './globals'
+import { breakpoints, margins } from './globals'
 
 const splitSyle = css`
   display: flex;
@@ -10,7 +10,7 @@ const splitSyle = css`
     flex-wrap: nowrap;
   }
   > *:first-child {
-    margin-right: 50px;
+    margin-right: ${margins.md}px;
   }
 `
 
