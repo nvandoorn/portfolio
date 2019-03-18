@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import { css, Global } from '@emotion/core'
-import { colours, fontStack, transitions, margins } from './globals'
+import { colours, fontStack, transitions } from './globals'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faSpotify,
@@ -38,9 +38,6 @@ const globalStyles = css`
   li {
     list-style-type: circle;
     list-style-position: inside;
-  }
-  ul li:not(:first-of-type):not(:last-child) {
-    margin: ${margins.md}px 0;
   }
   a {
     border-bottom: 1px dotted;
