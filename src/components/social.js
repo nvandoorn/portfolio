@@ -22,10 +22,10 @@ export const SocialEntry = p => (
   </a>
 )
 
-export const Social = p => (
+export const Social = ({ socialEntries }) => (
   <div>
-    {p.socialEntries.map(({ link, name, icon }) => (
-      <SocialEntry href={link} icon={icon} key={name} name={name} />
+    {socialEntries.map(entry => (
+      <SocialEntry {...entry} key={entry.name} />
     ))}
   </div>
 )
