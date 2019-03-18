@@ -36,7 +36,7 @@ const linkStyle = css`
 `
 
 const projectStyle = css`
-  margin: ${margins.lg}px 0 0 0;
+  margin: 0 0 ${margins.lg}px 0;
 `
 
 const linkIconStyle = css`
