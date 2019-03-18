@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from '@emotion/core'
 
 import { Button } from './button'
-import { colours, margins } from './globals'
+import { colours } from './globals'
 
 const splashContainerStyle = css`
   height: 100%;
@@ -13,13 +13,16 @@ const splashContainerStyle = css`
   flex-wrap: wrap;
 `
 
-const taglineStyle = css`
-  margin: ${margins.md}px 0;
+const heroTextStyle = css`
+  font-size: 3em;
 `
 
 export const Splash = p => (
   <article css={splashContainerStyle}>
-    <h2 css={taglineStyle}>{p.heroText}</h2>
+    <div>
+      <h2 css={heroTextStyle}>{p.heroText}</h2>
+      <h3>{p.heroTagline}</h3>
+    </div>
     <Button
       fontSize="1.2em"
       fontWeight="800"
