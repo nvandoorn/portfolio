@@ -31,19 +31,13 @@ const globalStyles = css`
     font-family: ${fontStack};
     color: ${colours.main};
   }
-  h1,
-  h2 {
-    margin: 0 0 ${margins.lg}px 0;
+  p,
+  li {
+    line-height: 2em;
   }
-  h3 {
-    margin: 0 0 ${margins.md}px 0;
-  }
-  h4,
-  h5 {
-    margin: 0 0 ${margins.sm}px 0;
-  }
-  ul {
-    list-style-type: none;
+  li {
+    list-style-type: circle;
+    list-style-position: inside;
   }
   ul li:not(:first-of-type):not(:last-child) {
     margin: ${margins.md}px 0;
@@ -57,10 +51,6 @@ const globalStyles = css`
   }
   body {
     background: ${colours.background};
-  }
-  // TODO remove this hack (FontAwesome SVGs are huge on load)
-  .svg-inline--fa {
-    max-height: 50px;
   }
 `
 
