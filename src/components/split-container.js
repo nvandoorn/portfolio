@@ -6,6 +6,7 @@ import { breakpoints, margins } from './globals'
 const splitSyle = css`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   @media (min-width: ${breakpoints[0].breakpoint}) {
     flex-wrap: nowrap;
   }
