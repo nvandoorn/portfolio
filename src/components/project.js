@@ -74,6 +74,10 @@ export const Project = p => {
       margin: 0 0 0 ${marginRight}px;
       flex: 1;
     }
+    & > * {
+      margin: 0 0 ${margins.md}px 0;
+    }
+
     & img {
       max-height: 150px;
       align-self: flex-end;
