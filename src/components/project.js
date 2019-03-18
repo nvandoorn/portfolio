@@ -74,6 +74,13 @@ export const Project = p => {
       margin: 0 0 0 ${marginRight}px;
       flex: 1;
     }
+    & img {
+      max-height: 150px;
+      align-self: flex-end;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        0 15px 12px rgba(0, 0, 0, 0.22);
+      margin-bottom: ${margins.md}px;
+    }
   `
   return (
     <article css={projectStyle}>
