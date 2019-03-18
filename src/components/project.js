@@ -107,17 +107,8 @@ export const Project = p => {
       </div>
       <h3 css={projectBriefStyle}>{p.brief}</h3>
       <div css={projectBlockStyle}>
-        {p.imgUrl ? (
-          <div css={imgContainerStyle}>
-            <img src={p.imgUrl} alt={p.imgAlt} css={imgStyle} />
-          </div>
-        ) : null}
-        {p.desc ? (
-          <div css={descContainerStyle}>
-            <div css={descStyle}>{p.desc}</div>
-            {p.links ? p.links : null}
-          </div>
-        ) : null}
+        {p.imgUrl ? <img src={p.imgUrl} alt={p.imgAlt} css={imgStyle} /> : null}
+        {p.desc ? <div css={descContainerStyle}>{p.desc}</div> : null}
       </div>
     </article>
   )
