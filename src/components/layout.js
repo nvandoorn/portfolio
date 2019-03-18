@@ -69,15 +69,15 @@ const siteData = {
   navLinks: [
     {
       name: 'Work',
-      link: '/work'
+      to: '/work'
     },
     {
       name: 'Projects',
-      link: '/projects'
+      to: '/projects'
     },
     {
       name: 'About',
-      link: '/about'
+      to: '/about'
     }
   ],
   socialEntries: [

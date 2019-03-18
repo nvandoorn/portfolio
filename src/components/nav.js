@@ -24,11 +24,11 @@ export const Nav = p => {
   return (
     <nav css={navStyle}>
       {p.links
-        ? p.links.map(({ name, link }) => (
+        ? p.links.map(({ name, to }) => (
             <Link
               css={linkStyle}
-              to={link}
-              key={link}
+              to={to}
+              key={to}
               activeStyle={{ borderColor: 'initial' }}
             >
               {name}
