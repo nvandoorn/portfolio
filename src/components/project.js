@@ -97,7 +97,7 @@ export const Project = p => {
             rel="noopener noreferrer"
           >
             <div css={linkIconStyle}>
-              <h3 css={projectHeadingStyle}>{p.name}</h3>
+              <h2 css={projectHeadingStyle}>{p.name}</h2>
               <FontAwesomeIcon icon={faLink} />
             </div>
           </a>
