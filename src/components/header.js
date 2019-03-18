@@ -6,6 +6,7 @@ import { Social } from './social'
 import { margins, breakpoints } from './globals'
 
 const headerStyle = css`
+  margin: 0 0 ${margins.lg}px 0;
   display: flex;
   justify-content: center;
   align-items: center;
