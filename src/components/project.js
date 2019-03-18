@@ -65,6 +65,7 @@ const dateStyle = css`
 export const Project = p => {
   const marginRight = p.imgUrl ? margins.md : 0
   const descContainerStyle = css`
+    font-weight: 300;
     display: flex;
     flex-direction: column;
     justify-content: center;
