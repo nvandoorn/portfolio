@@ -10,7 +10,7 @@ const splitSyle = css`
   @media (min-width: ${breakpoints[0].breakpoint}) {
     flex-wrap: nowrap;
   }
-  > *:first-child {
+  > *:first-of-type {
     margin-right: ${margins.md}px;
   }
 `
