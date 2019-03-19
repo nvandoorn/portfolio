@@ -17,13 +17,19 @@ Portfolio for Nicholas Van Doorn
 1. (content) Compose BRNKL descriptions
 1. (build) Write a build step to render a PDF from the `/cv` page
 1. (style) Write components or theme for cv content
+1. (style) Add colour to all FontAwesome icons
+
+## Future Ideas
+
+1. Factor content into markdown/MDX files (basically anything that pulls the content away from the source code a bit more.)
 1. (style) Design a fucking stellar splash screen
 
 ## Testing
 
-1. A11y audit
-1. Typography audit
-1. Test on wide range of screens for consistent behaviour
+1. Google Lighthouse
+1. A11y audit (`axe-core`?)
+1. Typography audit (???)
+1. Test on wide range of screens for consistent behaviour (???)
 
 ## Bugs
 
