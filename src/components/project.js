@@ -5,23 +5,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 import { Tag } from './tag'
-import { margins, breakpoints } from './globals'
+import { ProjectDetail } from './project-detail'
+import { margins } from './globals'
 
 const projectHeadingStyle = css`
   margin: 0 ${margins.sm}px 0 0;
 `
 const projectBriefStyle = css`
-  margin: 0;
   font-weight: 300;
 `
 
 const projectBlockStyle = css`
   display: flex;
   flex-wrap: wrap;
-`
-
-const imgStyle = css`
-  max-height: 85vw;
 `
 
 const linkStyle = css`
@@ -37,6 +33,9 @@ const linkStyle = css`
 
 const projectStyle = css`
   margin: 0 0 ${margins.lg}px 0;
+  & > * {
+    margin: 0 0 ${margins.md}px 0;
+  }
 `
 
 const linkIconStyle = css`
@@ -63,29 +62,6 @@ const dateStyle = css`
 `
 
 export const Project = p => {
-  const marginRight = p.imgUrl ? margins.md : 0
-  const descContainerStyle = css`
-    font-weight: 300;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: ${margins.md}px 0 0 0;
-    @media (min-width: ${breakpoints[0].breakpoint}px) {
-      margin: 0 0 0 ${marginRight}px;
-      flex: 1;
-    }
-    & > * {
-      margin: 0 0 ${margins.md}px 0;
-    }
-
-    & img {
-      max-height: 150px;
-      align-self: flex-end;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        0 15px 12px rgba(0, 0, 0, 0.22);
-      margin-bottom: ${margins.md}px;
-    }
-  `
   return (
     <article css={projectStyle}>
       <div css={projectHeadingContainerStyle}>
@@ -107,8 +83,20 @@ export const Project = p => {
       </div>
       <h3 css={projectBriefStyle}>{p.brief}</h3>
       <div css={projectBlockStyle}>
-        {p.imgUrl ? <img src={p.imgUrl} alt={p.imgAlt} css={imgStyle} /> : null}
-        {p.desc ? <div css={descContainerStyle}>{p.desc}</div> : null}
+        {p.desc ? (
+          <div
+            css={css`
+              margin-bottom: ${margins.md}px;
+            `}
+          >
+            {p.desc}
+          </div>
+        ) : null}
+        {p.projectDetails
+          ? p.projectDetails.map((k, i) => (
+              <ProjectDetail key={`project-detail-${i}`} {...k} />
+            ))
+          : null}
       </div>
     </article>
   )

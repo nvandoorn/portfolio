@@ -9,6 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from '../components/layout'
+import { margins } from '../components/globals'
 import { AboutEntry } from '../components/about-entry'
 import { Personal } from '../components/personal'
 import { SplitContainer } from '../components/split-container'
@@ -100,7 +101,11 @@ export default () => (
       <Personal {...personalProps} />
       <div>
         {aboutLists.map((entry, i) => (
-          <AboutEntry {...entry} key={`about-entry-${i}`} />
+          <AboutEntry
+            {...entry}
+            headerMargin={`0 0 ${margins.md}px 0`}
+            key={`about-entry-${i}`}
+          />
         ))}
       </div>
     </SplitContainer>

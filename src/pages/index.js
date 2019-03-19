@@ -7,7 +7,8 @@ import Layout from '../components/layout'
 import { Splash } from '../components/splash'
 
 const indexData = {
-  heroText: `Let's make computers work for us`,
+  heroText: `Hello world 👋`,
+  heroTagline: `Let's build software for life`,
   heroBtnTo: '/about',
   heroBtn: (
     <>
