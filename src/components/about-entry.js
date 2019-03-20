@@ -4,6 +4,9 @@ import { margins } from './globals'
 
 const aboutEntryStyle = css`
   margin: 0 0 ${margins.lg}px 0;
+  & li {
+    margin-bottom: ${margins.sm}px;
+  }
 `
 
 export const AboutEntry = ({ headerMargin, listItems, header }) => {
