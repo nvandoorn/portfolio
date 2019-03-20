@@ -69,8 +69,8 @@ const aboutLists = [
       </>
     ),
     listItems: [
-      `Learn more languages. I love deriving influence from all languages. I would love to learn more
-      about Ruby, Go, Rust, Smalltalk, ReasonML, and Elixir.`,
+      `Learn more languages. I love deriving influence from all languages. In particular, I'm interested in Ruby,
+      Rust, Smalltalk, ReasonML, and Elixir.`,
       `Write a driver using the Linux framebuffer API. Although I never want to
       specialize in operating systems, learning about them is fascinating and
       helps me write better code at all levels of abstraction.`,
