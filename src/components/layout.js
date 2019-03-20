@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { css, Global } from '@emotion/core'
 import { colours, fontStack, transitions } from './globals'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faSpotify,
   faGithub,
@@ -12,6 +11,7 @@ import {
 
 import { Container } from './container'
 import { Header } from './header'
+import { FontAwesome } from './font-awesome'
 
 const globalStyles = css`
   *,
@@ -19,6 +19,9 @@ const globalStyles = css`
   body {
     margin: 0;
     padding: 0;
+  }
+  path {
+    fill: ${colours.main};
   }
   p,
   a,
@@ -36,8 +39,8 @@ const globalStyles = css`
     line-height: 2em;
   }
   li {
-    list-style-type: circle;
     list-style-position: outside;
+    margin-left: 20px;
   }
   a {
     border-bottom: 1px dotted;
@@ -50,7 +53,6 @@ const globalStyles = css`
     background: ${colours.background};
   }
 `
-
 const siteData = {
   siteName: 'Nicholas Van Doorn',
   navLinks: [
@@ -71,22 +73,22 @@ const siteData = {
     {
       href: '//github.com/nvandoorn',
       name: 'GitHub',
-      icon: <FontAwesomeIcon icon={faGithub} />
+      icon: <FontAwesome icon={faGithub} size="30px" />
     },
     {
       href: '//twitter.com/nickvandoorn',
       name: 'Twitter',
-      icon: <FontAwesomeIcon icon={faTwitter} />
+      icon: <FontAwesome icon={faTwitter} size="30px" />
     },
     {
       href: '//keybase.io/nvandoorn',
       name: 'Keybase',
-      icon: <FontAwesomeIcon icon={faKeybase} />
+      icon: <FontAwesome icon={faKeybase} size="30px" />
     },
     {
       href: '//open.spotify.com/user/pontonn',
       name: 'Spotify',
-      icon: <FontAwesomeIcon icon={faSpotify} />
+      icon: <FontAwesome icon={faSpotify} size="30px" />
     }
   ]
 }
