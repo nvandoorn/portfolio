@@ -1,7 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
 import { Link } from 'gatsby'
-import { margins } from './globals'
+import { margins, breakpoints } from './globals'
 
 const navStyle = css`
   display: flex;
@@ -10,7 +10,10 @@ const navStyle = css`
 
 export const Nav = p => {
   const linkStyle = css`
-    padding: 0 ${margins.md}px ${margins.md}px ${margins.md}px;
+    padding: 0 ${margins.sm}px ${margins.sm}px ${margins.sm}px;
+    @media (min-width: ${breakpoints[0].breakpoint}) {
+      padding: 0 ${margins.md}px ${margins.md}px ${margins.md}px;
+    }
     &:not(:last-child) {
       margin: 0 ${margins.sm}px 0 0;
     }
