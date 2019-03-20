@@ -16,10 +16,16 @@ const makeButtonStyle = p =>
     transition: ${transitions.hover};
     text-decoration: none;
     background: ${p.background || 'none'};
+    & path {
+      transition: ${transitions.hover};
+    }
     &:hover {
       background: ${p.hoverBackground || 'none'};
       border-color: ${p.background || 'none'};
       color: ${p.hoverColour || 'initial'};
+      & path {
+        fill: ${p.hoverColour || 'initial'};
+      }
     }
   `
 
