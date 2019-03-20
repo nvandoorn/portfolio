@@ -12,8 +12,12 @@ import naiveChat from '../images/naive-chat.png'
 export const projects = [
   {
     name: 'cnaked',
-    brief:
-      'A Battlesnake so close to the metal, 6 CVEs have been opened while reading',
+    brief: (
+      <>
+        A <a href="https://battlesnake.io/">Battlesnake</a> so close to the
+        metal, 6 CVEs have been opened while reading
+      </>
+    ),
     date: 'Feb 2019 - Present',
     url: '//github.com/nvandoorn/cnaked',
     projectDetails: [
