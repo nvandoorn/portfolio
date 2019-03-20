@@ -12,6 +12,7 @@ const imgContainerStyle = css`
 export const Image = ({ imgUrl, caption, noShadow }) => {
   const imgStyle = css`
     max-height: 300px;
+    max-width: 80vw;
     align-self: flex-end;
     ${!noShadow
       ? `box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);`
