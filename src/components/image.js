@@ -25,7 +25,6 @@ export const Image = ({ imgUrl, caption, noShadow }) => {
       <a href={imgUrl} target="_blank" rel="noopener noreferrer">
         <img css={imgStyle} src={imgUrl} alt={caption} />
       </a>
-      <figcaption>{caption}</figcaption>
     </div>
   )
 }
