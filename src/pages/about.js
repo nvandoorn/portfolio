@@ -1,5 +1,5 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesome } from '../components/font-awesome'
 import {
   faHeart,
   faMap,
@@ -26,7 +26,7 @@ export const skills = [
 
 export const tools = [
   `Languages: Expert in TypeScript/JavaScript, fluent in C, working knowledge of Python and Shell`,
-  'Frontend: React, Angular, Ionic, RxJS',
+  'Frontend: React, Angular, Ionic, RxJS, Redux',
   'Infrastructure: Node, Firebase, Google Cloud (Cloud Functions, Pubsub, Stackdriver)',
   'Embedded: Linux, Legato, Yocto, AirVantage',
   'Automation: TSLint, ESLint, Prettier, clang-format'
@@ -36,7 +36,7 @@ const aboutLists = [
   {
     header: (
       <>
-        Values and Ethics <FontAwesomeIcon icon={faHeart} />
+        Values and Ethics <FontAwesome icon={faHeart} />
       </>
     ),
     listItems: [
@@ -49,7 +49,7 @@ const aboutLists = [
   {
     header: (
       <>
-        Skills and Experience <FontAwesomeIcon icon={faMap} />
+        Skills and Experience <FontAwesome icon={faMap} />
       </>
     ),
     listItems: skills
@@ -57,7 +57,7 @@ const aboutLists = [
   {
     header: (
       <>
-        Tools <FontAwesomeIcon icon={faWrench} />
+        Tools <FontAwesome icon={faWrench} />
       </>
     ),
     listItems: tools
@@ -65,7 +65,7 @@ const aboutLists = [
   {
     header: (
       <>
-        Future Learning Ideas <FontAwesomeIcon icon={faFlask} />
+        Future Learning Ideas <FontAwesome icon={faFlask} />
       </>
     ),
     listItems: [
@@ -76,7 +76,7 @@ const aboutLists = [
       helps me write better code at all levels of abstraction.`,
       `Implement TCP from scratch in C (bonus for x86 Assembly). We send a lot of data over the network
       so I want to zoom in on how it's done.`,
-      `Maybe write my own kernel with some basic threading (RTOS style)?`,
+      `Write my own kernel with some basic threading (RTOS style)?`,
       'Reduce the overhead of declarative web primitives (React style API close to the metal).'
     ]
   }
@@ -89,8 +89,8 @@ const personalProps = {
   imgUrl: profilePic,
   email: (
     <p>
-      <FontAwesomeIcon icon={faEnvelope} /> nick <em>at</em> nv <em>dot</em>{' '}
-      delivery
+      <FontAwesome icon={faEnvelope} size="12px" /> nick <em>at</em> nv{' '}
+      <em>dot</em> delivery
     </p>
   )
 }

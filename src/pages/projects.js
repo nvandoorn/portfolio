@@ -3,12 +3,11 @@ import React from 'react'
 import Layout from '../components/layout'
 import { Project } from '../components/project'
 
-import functional from '../images/functional.png'
 import camera from '../images/camera.png'
-import storageService from '../images/storage-service.png'
 import gpsMonitor from '../images/gps-monitor.png'
 import slask from '../images/slask.png'
-import ie from '../images/ie.png'
+import cnakedTestSuite from '../images/cnaked-test-suite.png'
+import naiveChat from '../images/naive-chat.png'
 
 export const projects = [
   {
@@ -16,27 +15,45 @@ export const projects = [
     brief:
       'A Battlesnake so close to the metal, 6 CVEs have been opened while reading',
     date: 'Feb 2019 - Present',
-    desc: (
-      <p>
-        A fast snake where everything is implemented by hand in C to perform a
-        fast traversal of all possible game states. The implementation is still
-        unfinished but I hope to enter it in the Battlesnake 2020 competition.
-      </p>
-    ),
-    url: '//github.com/nvandoorn/cnaked'
+    url: '//github.com/nvandoorn/cnaked',
+    projectDetails: [
+      {
+        listItems: [
+          'Prototype for Battlesnake 2019, will be entered in contest in 2020',
+          `Dangerously close to the metal`,
+          `All in on test driven development`,
+          'Likely to be re-written in Rust'
+        ],
+        images: [
+          {
+            imgUrl: cnakedTestSuite,
+            caption: 'cnaked Test Suite'
+          }
+        ]
+      }
+    ]
   },
   {
     name: 'naive',
     brief: 'A naive implementation of a NoSQL database',
     date: 'Jan 2019 - Present',
-    desc: (
-      <p>
-        A small realtime NoSQL database that can be used locally or over a
-        network. The public interface for this database mimic that of the
-        Firebase Realtime Database and data is persisted using a static JSON
-        file. For that reason, I do not suggest using this in production.
-      </p>
-    ),
+    projectDetails: [
+      {
+        listItems: [
+          'Designed to mimic the Firebase Realtime Database API',
+          'Written in TypeScript for the browser and Node',
+          'Code organized as monorepo with independent builds and integration tests',
+          'Can be used with a local filesystem or remote filesystem',
+          `Persisted in a static JSON file (don't use this in prod)`
+        ],
+        images: [
+          {
+            imgUrl: naiveChat,
+            caption: 'Chat Client Using Naive'
+          }
+        ]
+      }
+    ],
     url: '//github.com/nvandoorn/naive',
     showOnCv: true
   },
@@ -47,7 +64,8 @@ export const projects = [
     desc: (
       <p>
         My home internet performance is consistently below spec and my ISP never
-        believes me. Hopefully they will soon. Designed for maximum plug-ability
+        believes me. Hopefully they will soon. Designed for maximum
+        plug-ability.
       </p>
     ),
     url: '//github.com/nvandoorn/pipefitter',
@@ -63,7 +81,6 @@ export const projects = [
         two. In reality, a simple for loop is better, but I had fun trying this.
       </p>
     ),
-    imgUrl: functional,
     inProd: true,
     url: '//github.com/nvandoorn/functional'
   },
@@ -71,7 +88,6 @@ export const projects = [
     name: 'Legato Storage Service',
     brief: 'Non-volatile time series data storage',
     date: 'Jun 2018 - Present',
-    imgUrl: storageService,
     desc: (
       <p>
         The Legato Linux framework offers out of the box support for uploading
@@ -86,15 +102,23 @@ export const projects = [
     brief:
       'Monitor GPS in a separate process to avoid blocking single threaded apps',
     date: 'April 2018',
-    imgUrl: gpsMonitor,
-    desc: (
-      <p>
-        Instead of managing and synchronizing a thread to monitor GPS location
-        on embedded devices, this service asynchronously monitors the GPS
-        position and allows users to retrieve it using an inter process API (see
-        more about Legato IPC APIs here).
-      </p>
-    ),
+    projectDetails: [
+      {
+        listItems: [
+          'Allow single threaded apps to read the latest position without blocking',
+          'Dynamically poll and cache GPS location based on accuracy',
+          'Expose GPS API as synchronous methods reading from cache',
+          'Cache is updated in background using event-loop based timer (much like in JavaScript)'
+        ],
+        images: [
+          {
+            imgUrl: gpsMonitor,
+            caption: 'GPS Monitor with BRNKL App',
+            noShadow: true
+          }
+        ]
+      }
+    ],
     inProd: true,
     url: '//github.com/brnkl/gps-monitor',
     showOnCv: true
@@ -103,35 +127,31 @@ export const projects = [
     name: 'CF3 Config App',
     brief: 'Automatically configure common settings for CF3 based modules',
     date: 'April 2018',
-    desc: (
-      <p>
-        Sierra Wireless offers a range of cellular modules based on a common
-        socket with a common set of inputs and outputs.A range of commonly used
-        input / output pins and UART connections must be configured by running
-        an AT command over a serial connection to the CF3 based modem.Run this
-        app once and the CF3 based module will support the full range of GPIO
-        pins and UARTs in the Linux userspace.
-      </p>
-    ),
+    desc: <p>Automatically configure Sierra Wireless CF3 based modules</p>,
     inProd: true,
-    url: ''
+    url: '//github.com/brnkl/cf3-config'
   },
   {
     name: 'Legato Camera Driver',
     brief: 'Support for the VC0706 camera on a Legato based project',
     date: 'Nov 2017 - Dec 2017',
-    desc: (
-      <p>
-        The VC0706 camera is one of the only low power remote cameras with an
-        open protocol (serial port based).The seller, Adafruit, supplies open
-        source drivers implemented in Python and C++ with the purpose of running
-        on Arduino based systems. This means a dependency on certain Arduino
-        libraries for reading and writing to the serial port. We re-implemented
-        the C++ driver in C without the dependence on anything not included in
-        Linux (with the exception of a few Legato specific macros).
-      </p>
-    ),
-    imgUrl: camera,
+    projectDetails: [
+      {
+        listItems: [
+          'Port of an Arduino style driver to Linux',
+          'Integrated with Sierra Wireless Legato Framework',
+          'In use at Sierra Wireless and with their customers (see forums)'
+        ],
+        images: [
+          {
+            imgUrl: camera,
+            caption: 'Camera Driver with BRNKL App',
+            noShadow: true
+          }
+        ]
+      }
+    ],
+
     inProd: true,
     url: '//github.com/brnkl/VC0706-cam-lib',
     showOnCv: true
@@ -140,27 +160,30 @@ export const projects = [
     name: 'ccss',
     brief: 'A slightly more polite variant of CSS',
     date: 'Jul 2017',
-    links: '',
     desc: `ccss transforms the correct spelling of colour to color in your CSS. This was intended
           to be part one of a series of awful CSS transforms.`,
-    imgUrl: '',
     url: '//github.com/nvandoorn/ccss'
   },
   {
     name: 'slask',
     brief: 'A lightweight log viewer and server all in one',
     date: 'Mar 2017 - Present',
-    desc: (
-      <p>
-        slask is designed to make remote systems debugging easy. During my time
-        at Forest Technology Systems (FTS), we worked on a remote weather
-        station based on a single board Linux computer. During the early days, I
-        spent large amounts of time transferring and filtering log files using a
-        mix of <em>scp</em>, <em>grep</em>, and <em>less</em>.
-      </p>
-    ),
-    imgUrl: slask,
-    url: '//github.com/nvandoorn/slask'
+    url: '//github.com/nvandoorn/slask',
+    projectDetails: [
+      {
+        listItems: [
+          'Log server implemented run in Node',
+          'Log client implemented with React',
+          'Support for custom configs and custom log parsing'
+        ],
+        images: [
+          {
+            imgUrl: slask,
+            caption: 'slask Client Screenshot'
+          }
+        ]
+      }
+    ]
   },
   {
     name: 'IE Media Queries',
@@ -169,8 +192,14 @@ export const projects = [
     desc: `IE Media Queries is a Javascript polyfill for Internet Explorer 8's lack of
           media query support. IE8 is more or less dead and unsupported, but I still
           enjoyed re-creating unsupported functionality`,
-    imgUrl: ie,
     url: '//github.com/nvandoorn/IEMediaQueries'
+  },
+  {
+    name: 'times-table-tester',
+    brief: 'Code is easier than mental math',
+    date: 'March 2007',
+    url: '//github.com/nvandoorn/times-table-tester',
+    desc: 'In 6th grade I made command line app to quiz myself on times tables.'
   }
 ]
 

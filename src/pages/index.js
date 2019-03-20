@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesome } from '../components/font-awesome'
 
 import Layout from '../components/layout'
 import { Splash } from '../components/splash'
@@ -12,7 +12,7 @@ const indexData = {
   heroBtnTo: '/about',
   heroBtn: (
     <>
-      Get In Touch <FontAwesomeIcon icon={faPaperPlane} />
+      Get In Touch <FontAwesome icon={faPaperPlane} />
     </>
   )
 }

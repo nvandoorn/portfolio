@@ -8,6 +8,7 @@ import brnklAppMap from '../images/brnkl-app-map-iphone.png'
 import brnklAppAlerts from '../images/brnkl-app-alerts-iphone.png'
 import brnklProduct from '../images/brnkl-product.jpg'
 import wpModule from '../images/wp-module.png'
+import raos from '../images/raos.jpg'
 
 export const workHistory = [
   {
@@ -44,9 +45,9 @@ export const workHistory = [
       {
         header: <a href="https://app.brnkl.io"> App</a>,
         listItems: [
-          'Implemented with TypeScript, Angular, and RxJS',
+          'Implemented with TypeScript, Angular, RxJS, and Redux',
           'Deployed on iOS, Android, and the web',
-          'Realtime data using RxJS and Firebase Realtime Database',
+          'Live data using RxJS and Firebase Realtime Database',
           'Push alerts implemented over Firebase Cloud Messaging'
         ],
         images: [
@@ -72,7 +73,7 @@ export const workHistory = [
         ]
       },
       {
-        header: 'Embedded',
+        header: <a href="https://github.com/brnkl">Embedded</a>,
         listItems: [
           <>
             Written in C with the{' '}
@@ -96,7 +97,7 @@ export const workHistory = [
         header: 'Production Automation',
         listItems: [
           'Test circuit boards against a suite of hardware tests',
-          'Automate installtion of latest firmware release for hardware',
+          'Automate installation of latest firmware release for hardware',
           'Automated delivery of diagnostic messages to factory workers',
           'Automation of device inventory (e.g collecting board serial numbers)'
         ],
@@ -112,8 +113,8 @@ export const workHistory = [
     desc: (
       <p>
         Barnacle Systems is a self bootstrapped company working on boat
-        monitoring and security. I worked as the sole implementer of the the
-        BRNKL app, backend, embedded firmware, and production automation
+        monitoring and security. I worked remotely as the sole implementer of
+        the the BRNKL app, backend, embedded firmware, and production automation
         software (with thanks to many open source authors).
       </p>
     ),
@@ -152,7 +153,8 @@ export const workHistory = [
           'Implement components of embedded camera product aimed at the fire weather market (FTS RAOS)',
           'Automate builds and installs',
           'Integrate with user facing software as a service product'
-        ]
+        ],
+        images: [{ imgUrl: raos, caption: 'FTS RAOS camera system' }]
       }
     ],
     desc: (
