@@ -21,6 +21,7 @@ const descContainerStyle = css`
 
 const imgContainerStyle = css`
   display: flex;
+  flex-wrap: wrap;
   & > *:not(:last-child) {
     margin-right: ${margins.sm}px;
   }
