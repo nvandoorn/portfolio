@@ -1,7 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesome } from './font-awesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 import { Tag } from './tag'
@@ -74,7 +74,7 @@ export const Project = p => {
           >
             <div css={linkIconStyle}>
               <h2 css={projectHeadingStyle}>{p.name}</h2>
-              <FontAwesomeIcon icon={faLink} />
+              <FontAwesome icon={faLink} />
             </div>
           </a>
           {p.inProd ? <Tag fontSize="0.8em">In Prod</Tag> : null}
