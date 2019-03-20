@@ -9,10 +9,10 @@ const descContainerStyle = css`
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex: 1;
   justify-content: flex-start;
   @media (min-width: ${breakpoints[0].breakpoint}px) {
     margin: 0 0 0 ${margins.md}px;
-    flex: 1;
   }
   & > * {
     margin: 0 0 ${margins.md}px 0;
