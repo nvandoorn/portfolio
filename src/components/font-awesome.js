@@ -3,7 +3,7 @@ import { css } from '@emotion/core'
 
 const DEFAULT_SIZE = '20px'
 
-export const FontAwesome = ({ icon: outerIcon, size, fill }) => {
+export const FontAwesome = ({ icon: outerIcon, size, fill, cssProp }) => {
   const svgStyle = css`
     width: ${size || DEFAULT_SIZE};
     height: ${size || DEFAULT_SIZE};
@@ -15,7 +15,7 @@ export const FontAwesome = ({ icon: outerIcon, size, fill }) => {
   `
   const { icon, iconName } = outerIcon
   return (
-    <svg css={svgStyle} viewBox={`0 0 ${icon[1]} ${icon[1]}`}>
+    <svg css={[svgStyle, cssProp]} viewBox={`0 0 ${icon[1]} ${icon[1]}`}>
       <path d={icon[4]} />
       <desc>{iconName}</desc>
     </svg>
