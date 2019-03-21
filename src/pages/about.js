@@ -89,8 +89,8 @@ const personalProps = {
   imgUrl: profilePic,
   email: (
     <p>
-      <FontAwesome icon={faEnvelope} size="12px" /> nick <em>at</em> nv{' '}
-      <em>dot</em> delivery
+      <FontAwesome icon={faEnvelope} size="12px" /> vandoorn.nick <em>at</em>{' '}
+      gmail.com
     </p>
   )
 }
