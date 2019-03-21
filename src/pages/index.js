@@ -21,8 +21,11 @@ const IndexPage = () => (
   <Layout height="100vh">
     <Splash {...indexData} />
     <footer>
-      Made with ❤️ &{' '}
-      <a href="https://github.com/nvandoorn/portfolio">open source</a> in 2019
+      Made with{' '}
+      <span role="img" aria-label="love">
+        ❤️
+      </span>{' '}
+      & <a href="https://github.com/nvandoorn/portfolio">open source</a> in 2019
     </footer>
   </Layout>
 )
