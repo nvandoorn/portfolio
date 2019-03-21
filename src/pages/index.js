@@ -21,7 +21,7 @@ const IndexPage = () => (
   <Layout height="100vh">
     <Splash {...indexData} />
     <footer>
-      Made with{' '}
+      Portfolio made with{' '}
       <span role="img" aria-label="love">
         ❤️
       </span>{' '}
