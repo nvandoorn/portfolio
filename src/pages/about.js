@@ -1,4 +1,5 @@
 import React from 'react'
+import { css } from '@emotion/core'
 import { FontAwesome } from '../components/font-awesome'
 import {
   faHeart,
@@ -9,7 +10,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from '../components/layout'
-import { margins } from '../components/globals'
 import { AboutEntry } from '../components/about-entry'
 import { Personal } from '../components/personal'
 import { SplitContainer } from '../components/split-container'
@@ -99,13 +99,17 @@ export default () => (
   <Layout>
     <SplitContainer>
       <Personal {...personalProps} />
-      <div>
+      <div
+        css={({ margins }) =>
+          css`
+            & h2 {
+              margin: 0 0 ${margins.md}px 0;
+            }
+          `
+        }
+      >
         {aboutLists.map((entry, i) => (
-          <AboutEntry
-            {...entry}
-            headerMargin={`0 0 ${margins.md}px 0`}
-            key={`about-entry-${i}`}
-          />
+          <AboutEntry {...entry} key={`about-entry-${i}`} />
         ))}
       </div>
     </SplitContainer>
