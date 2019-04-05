@@ -1,7 +1,5 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { css, Global } from '@emotion/core'
-import { colours, fontStack, transitions } from './globals'
+import React, { Component } from 'react'
+import { themes } from './globals'
 import {
   faSpotify,
   faGithub,
@@ -9,50 +7,26 @@ import {
   faKeybase
 } from '@fortawesome/free-brands-svg-icons'
 
-import { Container } from './container'
 import { Header } from './header'
 import { FontAwesome } from './font-awesome'
+import { ThemeSwitcher } from './theme-switcher'
+import { BaseLayout } from './base-layout'
+import { parseQuery, writeQuery } from '../lib/url'
 
-const globalStyles = css`
-  *,
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  path {
-    fill: ${colours.main};
-  }
-  p,
-  a,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  div {
-    font-family: ${fontStack};
-    color: ${colours.main};
-  }
-  p,
-  li {
-    line-height: 2em;
-  }
-  li {
-    list-style-position: outside;
-    margin-left: 20px;
-  }
-  a {
-    border-bottom: 1px dotted;
-    text-decoration: none;
-    &: hover {
-      transition: ${transitions.hover};
+const helmetData = {
+  title: 'Nicholas Van Doorn',
+  meta: [
+    {
+      name: 'description',
+      content: 'Portfolio for Nicholas Van Doorn'
+    },
+    {
+      name: 'keywords',
+      content: 'software, engineer, development, web'
     }
-  }
-  body {
-    background: ${colours.background};
-  }
-`
+  ]
+}
+
 const siteData = {
   siteName: 'Nicholas Van Doorn',
   navLinks: [
@@ -71,47 +45,81 @@ const siteData = {
   ],
   socialEntries: [
     {
-      href: '//github.com/nvandoorn',
+      href: 'https://github.com/nvandoorn',
       name: 'GitHub',
       icon: <FontAwesome icon={faGithub} size="30px" />
     },
     {
-      href: '//twitter.com/nickvandoorn',
+      href: 'https://twitter.com/nickvandoorn',
       name: 'Twitter',
       icon: <FontAwesome icon={faTwitter} size="30px" />
     },
     {
-      href: '//keybase.io/nvandoorn',
+      href: 'https://keybase.io/nvandoorn',
       name: 'Keybase',
       icon: <FontAwesome icon={faKeybase} size="30px" />
     },
     {
-      href: '//open.spotify.com/user/pontonn',
+      href: 'https://open.spotify.com/user/pontonn',
       name: 'Spotify',
       icon: <FontAwesome icon={faSpotify} size="30px" />
     }
   ]
 }
 
-export default ({ children, height }) => (
-  <>
-    <Global styles={globalStyles} />
-    <Helmet
-      title="Nicholas Van Doorn"
-      meta={[
-        { name: 'description', content: 'Portfolio for Nicholas Van Doorn' },
-        { name: 'keywords', content: 'software, engineer, development, web' }
-      ]}
-    >
-      <html lang="en" />
-    </Helmet>
-    <Container height={height}>
-      <Header
-        siteName={siteData.siteName}
-        links={siteData.navLinks}
-        socialEntries={siteData.socialEntries}
-      />
-      {children}
-    </Container>
-  </>
-)
+const getThemeKeyFromUrl = () => {
+  const queryObj = parseQuery()
+  return queryObj && queryObj.themeKey
+}
+
+const initState = () => {
+  let currentThemeKey = getThemeKeyFromUrl() || 'mainTheme'
+  return {
+    theme: themes[currentThemeKey],
+    currentThemeKey
+  }
+}
+
+// persist state globally
+// (theme should stay
+//  across page changes)
+let lastState = initState()
+
+export default class Layout extends Component {
+  state = lastState
+
+  changeTheme = themeKey => {
+    const theme = themes[themeKey]
+    const newState = { theme, currentThemeKey: themeKey }
+    lastState = newState
+    this.setState(newState)
+    writeQuery({ themeKey })
+  }
+
+  render() {
+    const { children, height } = this.props
+    return (
+      <BaseLayout
+        height={height}
+        theme={this.state.theme}
+        helmetData={helmetData}
+      >
+        <Header
+          siteName={siteData.siteName}
+          links={siteData.navLinks}
+          socialEntries={siteData.socialEntries}
+        />
+
+        {children}
+        <ThemeSwitcher
+          currentTheme={this.state.currentThemeKey}
+          themes={[
+            { name: '👔', key: 'mainTheme' },
+            { name: '📰', key: 'highContrastTheme' }
+          ]}
+          onClick={t => this.changeTheme(t)}
+        />
+      </BaseLayout>
+    )
+  }
+}
