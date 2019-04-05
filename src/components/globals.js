@@ -3,7 +3,7 @@ export const colours = {
   main: '#FFFFFF'
 }
 
-export const margins = {
+const margins = {
   xsm: 6,
   sm: 12,
   md: 28,
@@ -11,17 +11,17 @@ export const margins = {
   xl: 75
 }
 
-export const transitions = {
+const transitions = {
   hover: '0.4s cubic-bezier(0.7, 0, 0.3, 1)'
 }
 
-export const radius = {
+const radius = {
   sm: 8
 }
 
-export const fontStack = 'Helvetica Neue,Helvetica,Arial,sans-serif;'
+const fontStack = 'Helvetica Neue,Helvetica,Arial,sans-serif;'
 
-export const breakpoints = [
+const breakpoints = [
   {
     breakpoint: '600px',
     size: '90%'
@@ -39,3 +39,25 @@ export const breakpoints = [
     size: '1100px'
   }
 ]
+
+export const mainTheme = {
+  colours,
+  fontStack,
+  transitions,
+  margins,
+  breakpoints,
+  radius
+}
+
+const highContrastTheme = {
+  ...mainTheme,
+  colours: {
+    background: '#ffffff',
+    main: '#000000'
+  }
+}
+
+export const themes = {
+  mainTheme,
+  highContrastTheme
+}
