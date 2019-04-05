@@ -12,6 +12,7 @@ Portfolio for Nicholas Van Doorn
 ## TODO
 
 1. (style) Style `/cv` route such that PDF is usable
+1. (build) Generate `srcset` for images at build time
 
 ## Future Ideas
 
@@ -29,6 +30,5 @@ Portfolio for Nicholas Van Doorn
 
 1. Loading page from URL does not apply `selected` css class to respective nav item (might be a Netlify related issue?)
 1. Fonts on Windows do not look great, Linux story likely is not much better
-1. Images and nav extends beyond container on really small viewport (iPhone 5)
 1. "Selected" nav item uses same visual indicator as a normal link (confusing, inconsistent)
 1. FontAwesome SVG sizing is not great (ideally it would change with text size)
