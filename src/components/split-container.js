@@ -1,9 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
 
-import { breakpoints, margins } from './globals'
-
-const splitSyle = css`
+const splitSyle = ({ breakpoints, margins }) => css`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

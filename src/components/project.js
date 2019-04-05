@@ -6,9 +6,8 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 import { Tag } from './tag'
 import { ProjectDetail } from './project-detail'
-import { margins } from './globals'
 
-const projectHeadingStyle = css`
+const projectHeadingStyle = ({ margins }) => css`
   margin: 0 ${margins.sm}px 0 0;
 `
 const projectBriefStyle = css`
@@ -20,7 +19,7 @@ const projectBlockStyle = css`
   flex-wrap: wrap;
 `
 
-const linkStyle = css`
+const linkStyle = ({ margins }) => css`
   display: flex;
   align-content: center;
   margin: 0 ${margins.sm}px 0 0;
@@ -31,7 +30,7 @@ const linkStyle = css`
   }
 `
 
-const projectStyle = css`
+const projectStyle = ({ margins }) => css`
   margin: 0 0 ${margins.lg}px 0;
   & > * {
     margin: 0 0 ${margins.md}px 0;
@@ -43,7 +42,7 @@ const linkIconStyle = css`
   align-items: center;
 `
 
-const projectHeadingContainerStyle = css`
+const projectHeadingContainerStyle = ({ margins }) => css`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -57,7 +56,7 @@ const projectTagContainerStyle = css`
   flex-wrap: wrap;
 `
 
-const dateStyle = css`
+const dateStyle = ({ margins }) => css`
   margin-bottom: ${margins.sm}px;
 `
 
@@ -85,7 +84,7 @@ export const Project = p => {
       <div css={projectBlockStyle}>
         {p.desc ? (
           <div
-            css={css`
+            css={({ margins }) => css`
               margin-bottom: ${margins.md}px;
             `}
           >

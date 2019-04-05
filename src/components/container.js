@@ -1,19 +1,19 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import { breakpoints, margins } from './globals'
 
-const mq = breakpoints
-  .map(
-    ({ breakpoint, size }) => `
+const mq = breakpoints =>
+  breakpoints
+    .map(
+      ({ breakpoint, size }) => `
       @media (min-width: ${breakpoint}) {
         width: ${size};
       }
     `
-  )
-  .join('\n')
+    )
+    .join('\n')
 
 export const Container = p => {
-  const containerStyle = css`
+  const containerStyle = ({ breakpoints, margins }) => css`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -21,7 +21,7 @@ export const Container = p => {
     width: 93%;
     height: ${p.height || '100%'};
     box-sizing: border-box;
-    ${mq}
+    ${mq(breakpoints)}
   `
   return <div css={containerStyle}>{p.children}</div>
 }

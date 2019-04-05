@@ -1,8 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import { margins } from './globals'
 
-const aboutEntryStyle = css`
+const aboutEntryStyle = ({ margins }) => css`
   margin: 0 0 ${margins.lg}px 0;
   & li {
     margin-bottom: ${margins.sm}px;
@@ -10,12 +9,9 @@ const aboutEntryStyle = css`
 `
 
 export const AboutEntry = ({ headerMargin, listItems, header }) => {
-  const headingStyle = css`
-    margin: ${headerMargin || 0};
-  `
   return (
     <article css={aboutEntryStyle}>
-      <h2 css={headingStyle}>{header}</h2>
+      <h2>{header}</h2>
       {listItems ? (
         <ul>
           {listItems.map((item, i) => (

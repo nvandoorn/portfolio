@@ -1,8 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import { margins } from './globals'
 
-const socialEntryStyle = css`
+const socialEntryStyle = ({ margins }) => css`
   margin: 0 ${margins.sm}px 0 0;
   border: none;
   font-size: 24px;

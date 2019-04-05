@@ -3,9 +3,8 @@ import { css } from '@emotion/core'
 
 import { SplitContainer } from './split-container'
 import { Image } from './image'
-import { margins, breakpoints } from './globals'
 
-const descContainerStyle = css`
+const descContainerStyle = ({ breakpoints, margins }) => css`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -19,7 +18,7 @@ const descContainerStyle = css`
   }
 `
 
-const imgContainerStyle = css`
+const imgContainerStyle = ({ margins }) => css`
   display: flex;
   flex-wrap: wrap;
   & > *:not(:last-child) {
@@ -29,7 +28,7 @@ const imgContainerStyle = css`
 
 export const ProjectDetail = ({ listItems, header, images }) => (
   <section
-    css={css`
+    css={({ margins }) => css`
       width: 100%;
       margin-bottom: ${margins.md}px;
     `}

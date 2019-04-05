@@ -3,9 +3,8 @@ import { css } from '@emotion/core'
 import { Link } from 'gatsby'
 import { Nav } from './nav'
 import { Social } from './social'
-import { margins, breakpoints } from './globals'
 
-const headerStyle = css`
+const headerStyle = ({ margins, breakpoints }) => css`
   margin: 0 0 ${margins.lg}px 0;
   display: flex;
   justify-content: center;
@@ -20,7 +19,7 @@ const headerLinkStyle = css`
   border: none;
 `
 
-const headerLeftStyle = css`
+const headerLeftStyle = ({ margins }) => css`
   margin: 0 0 ${margins.md}px 0;
 `
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import { css } from '@emotion/core'
-import { margins } from './globals'
 
 const imgContainerStyle = css`
   text-align: right;
@@ -10,7 +9,7 @@ const imgContainerStyle = css`
 `
 
 export const Image = ({ imgUrl, caption, noShadow }) => {
-  const imgStyle = css`
+  const imgStyle = ({ margins }) => css`
     max-height: 300px;
     max-width: 80vw;
     align-self: flex-end;

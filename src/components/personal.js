@@ -1,9 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/core'
 
-import { margins } from './globals'
-
-const personalStyle = css`
+const personalStyle = ({ margins }) => css`
   & > * {
     margin: 0 0 ${margins.md}px 0;
   }
