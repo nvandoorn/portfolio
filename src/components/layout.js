@@ -67,6 +67,11 @@ const siteData = {
   ]
 }
 
+const themeSwitcherThemes = [
+  { name: '👔', key: 'mainTheme' },
+  { name: '📰', key: 'highContrastTheme' }
+]
+
 const getThemeKeyFromUrl = () => {
   const queryObj = parseQuery()
   return queryObj && queryObj.themeKey
@@ -109,14 +114,10 @@ export default class Layout extends Component {
           links={siteData.navLinks}
           socialEntries={siteData.socialEntries}
         />
-
         {children}
         <ThemeSwitcher
           currentTheme={this.state.currentThemeKey}
-          themes={[
-            { name: '👔', key: 'mainTheme' },
-            { name: '📰', key: 'highContrastTheme' }
-          ]}
+          themes={themeSwitcherThemes}
           onClick={t => this.changeTheme(t)}
         />
       </BaseLayout>
