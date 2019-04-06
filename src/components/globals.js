@@ -57,6 +57,16 @@ const highContrastTheme = {
   }
 }
 
+export const cvTheme = {
+  ...highContrastTheme,
+  margins: {
+    xsm: 2,
+    sm: 2,
+    md: 5,
+    lg: 10
+  }
+}
+
 export const themes = {
   mainTheme,
   highContrastTheme
