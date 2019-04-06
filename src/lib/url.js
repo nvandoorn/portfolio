@@ -1,8 +1,9 @@
-import { location, history } from 'browser-monads'
-export const parseQuery = ({ search } = location) =>
-  search && parseQueryString(search)
+import { window } from 'browser-monads'
 
-const parseQueryString = query =>
+export const parseQuery = () =>
+  window.location.search && parseQueryString(window.location.search)
+
+export const parseQueryString = query =>
   query
     .split('?')[1]
     .split('&')
@@ -20,6 +21,6 @@ export const objectToQuery = query =>
     '?'
   )
 
-export const writeQuery = (queryObj, { pushState } = history) => {
-  pushState({}, '', objectToQuery(queryObj))
+export const writeQuery = queryObj => {
+  window.history.pushState({}, '', objectToQuery(queryObj))
 }
