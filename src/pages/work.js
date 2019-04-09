@@ -7,7 +7,6 @@ import startupOfTheYear from '../images/startup-of-the-year.jpg'
 import brnklAppMap from '../images/brnkl-app-map-iphone.png'
 import brnklAppAlerts from '../images/brnkl-app-alerts-iphone.png'
 import brnklProduct from '../images/brnkl-product.jpg'
-import wpModule from '../images/wp-module.png'
 import raos from '../images/raos.jpg'
 
 export const workHistory = [
@@ -86,51 +85,28 @@ export const workHistory = [
           'Custom drivers for hardware peripherals (userspace and kernelspace)',
           'Integration with backend to implement custom business logic',
           'Successful deploys of over the air updates to customers',
+          'Test circuit boards against a suite of hardware tests',
           <>
             Active member of <a href="https://forum.legato.io">Legato</a> and{' '}
             <a href="https://forum.mangoh.io">mangOH</a> communities
           </>
         ],
         images: [{ imgUrl: brnklProduct, caption: 'BRNKL embedded device' }]
-      },
-      {
-        header: 'Production Automation',
-        listItems: [
-          'Test circuit boards against a suite of hardware tests',
-          'Automate installation of latest firmware release for hardware',
-          'Automated delivery of diagnostic messages to factory workers',
-          'Automation of device inventory (e.g collecting board serial numbers)'
-        ],
-        images: [
-          {
-            imgUrl: wpModule,
-            caption: 'Sierra Wireless WP85 Module (core of BRNKL)',
-            noShadow: true
-          }
-        ]
       }
     ],
-    desc: (
-      <p>
-        Barnacle Systems is a self bootstrapped company working on boat
+    desc: `Barnacle Systems is a self bootstrapped company working on boat
         monitoring and security. I worked remotely as the sole implementer of
         the the BRNKL app, backend, embedded firmware, and production automation
-        software (with thanks to many open source authors).
-      </p>
-    ),
-    url: '//brnkl.io'
+        software (with thanks to many open source authors).`,
+    url: 'https://brnkl.io'
   },
   {
     name: 'Software Developer, Contract',
     brief: 'BRNKL by Barnacle Systems',
     date: 'Jul 2017 - Sept 2017',
-    desc: (
-      <p>
-        One of my co-workers from Forest Technology Systems left to found their
+    desc: `One of my co-workers from Forest Technology Systems left to found their
         own company and approached me to help with the initial version of the
-        app and backend.
-      </p>
-    ),
+        app and backend.`,
     projectDetails: [
       {
         listItems: [
@@ -141,7 +117,7 @@ export const workHistory = [
         ]
       }
     ],
-    url: '//brnkl.io'
+    url: 'https://brnkl.io'
   },
   {
     name: 'Software Developer, Co-op',
@@ -157,13 +133,10 @@ export const workHistory = [
         images: [{ imgUrl: raos, caption: 'FTS RAOS camera system' }]
       }
     ],
-    desc: (
-      <p>
-        During my time at Forest Technology Systems, I worked with a small
-        cross-functional team of engineers, product managers, and sales staff.
-      </p>
-    ),
-    url: '//ftsinc.com/'
+    desc: `During my time at Forest Technology Systems, I worked with a small
+          cross-functional team of engineers, product managers,
+          and sales staff to transform a prototype camera stsystem into a production ready product.`,
+    url: 'https://ftsinc.com/'
   }
 ]
 

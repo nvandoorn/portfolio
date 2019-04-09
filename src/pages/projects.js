@@ -11,6 +11,54 @@ import naiveChat from '../images/naive-chat.png'
 
 export const projects = [
   {
+    name: 'sunlight-theme',
+    url: 'https://github.com/nvandoorn/sunlight-theme',
+    brief: 'A theme provider for current level of sunlight',
+    date: 'April 2019',
+    showOnCv: true,
+    projectDetails: [
+      {
+        listItems: [
+          <>
+            Component to provide <code>theme.lightLevel</code> to all children
+            using <a href="https://emotion.sh/docs/theming">emotion-theming</a>
+          </>,
+          <>
+            Support colour mapping via <code>middleware</code> prop
+          </>,
+          <>
+            Small wrapper around{' '}
+            <a href="https://github.com/nvandoorn/use-sunlight">use-sunlight</a>
+          </>
+        ]
+      }
+    ]
+  },
+  {
+    name: 'use-sunlight',
+    url: 'https://github.com/nvandoorn/use-sunlight',
+    brief: 'A React hook for the current level of sunlight',
+    date: 'March 2019',
+    showOnCv: true,
+    projectDetails: [
+      {
+        listItems: [
+          <>
+            Based on{' '}
+            <a href="https:https://github.com/streamich/react-use/blob/master/docs/useLocation.md">
+              useLocation
+            </a>
+          </>,
+          'Tested with Storybook and Jest',
+          <>
+            Useful for theme providers, such as{' '}
+            <a href="https://emotion.sh/docs/theming">emotion-theming</a>
+          </>
+        ]
+      }
+    ]
+  },
+  {
     name: 'cnaked',
     brief: (
       <>
@@ -19,11 +67,11 @@ export const projects = [
       </>
     ),
     date: 'Feb 2019 - Present',
-    url: '//github.com/nvandoorn/cnaked',
+    url: 'https://github.com/nvandoorn/cnaked',
     projectDetails: [
       {
         listItems: [
-          'Prototype for Battlesnake 2019, will be entered in contest in 2020',
+          `Prototype for Battlesnake 2019, will be entered in contest in 2020`,
           `Dangerously close to the metal`,
           `All in on test driven development`,
           'Likely to be re-written in Rust'
@@ -58,48 +106,34 @@ export const projects = [
         ]
       }
     ],
-    url: '//github.com/nvandoorn/naive',
-    showOnCv: true
+    url: 'https://github.com/nvandoorn/naive'
   },
   {
     name: 'Pipefitter',
     brief: 'Automated audits and monitoring for your ISP',
     date: 'Nov 2018 - Present',
-    desc: (
-      <p>
-        My home internet performance is consistently below spec and my ISP never
+    desc: `My home internet performance is consistently below spec and my ISP never
         believes me. Hopefully they will soon. Designed for maximum
-        plug-ability.
-      </p>
-    ),
-    url: '//github.com/nvandoorn/pipefitter',
-    showOnCv: true
+        plug-ability.`,
+    url: 'https://github.com/nvandoorn/pipefitter'
   },
   {
     name: 'funCtional',
     brief: 'Functional programming in C with statically allocated memory',
     date: 'Aug 2018',
-    desc: (
-      <p>
-        I like functional programming and I like C, so I tried to combine the
-        two. In reality, a simple for loop is better, but I had fun trying this.
-      </p>
-    ),
+    desc: `I like functional programming and I like C, so I tried to combine the
+    two. In reality, a simple for loop is better, but I had fun trying this.`,
     inProd: true,
-    url: '//github.com/nvandoorn/functional'
+    url: 'https://github.com/nvandoorn/functional'
   },
   {
     name: 'Legato Storage Service',
     brief: 'Non-volatile time series data storage',
     date: 'Jun 2018 - Present',
-    desc: (
-      <p>
-        The Legato Linux framework offers out of the box support for uploading
+    desc: `The Legato Linux framework offers out of the box support for uploading
         time series data, but not storing it locally. For this reason, we
-        created this service to persist data for offline cases.
-      </p>
-    ),
-    url: '//github.com/brnkl/legato-storage-service'
+        created this service to persist data for offline cases.`,
+    url: 'https://github.com/brnkl/legato-storage-service'
   },
   {
     name: 'Legato GPS Monitor',
@@ -124,16 +158,15 @@ export const projects = [
       }
     ],
     inProd: true,
-    url: '//github.com/brnkl/gps-monitor',
-    showOnCv: true
+    url: 'https://github.com/brnkl/gps-monitor'
   },
   {
     name: 'CF3 Config App',
     brief: 'Automatically configure common settings for CF3 based modules',
     date: 'April 2018',
-    desc: <p>Automatically configure Sierra Wireless CF3 based modules</p>,
+    desc: `Automatically configure Sierra Wireless CF3 based modules`,
     inProd: true,
-    url: '//github.com/brnkl/cf3-config'
+    url: 'https://github.com/brnkl/cf3-config'
   },
   {
     name: 'Legato Camera Driver',
@@ -157,7 +190,7 @@ export const projects = [
     ],
 
     inProd: true,
-    url: '//github.com/brnkl/VC0706-cam-lib',
+    url: 'https://github.com/brnkl/VC0706-cam-lib',
     showOnCv: true
   },
   {
@@ -166,13 +199,13 @@ export const projects = [
     date: 'Jul 2017',
     desc: `ccss transforms the correct spelling of colour to color in your CSS. This was intended
           to be part one of a series of awful CSS transforms.`,
-    url: '//github.com/nvandoorn/ccss'
+    url: 'https://github.com/nvandoorn/ccss'
   },
   {
     name: 'slask',
     brief: 'A lightweight log viewer and server all in one',
-    date: 'Mar 2017 - Present',
-    url: '//github.com/nvandoorn/slask',
+    date: 'March 2017 - Present',
+    url: 'https://github.com/nvandoorn/slask',
     projectDetails: [
       {
         listItems: [
@@ -196,13 +229,13 @@ export const projects = [
     desc: `IE Media Queries is a Javascript polyfill for Internet Explorer 8's lack of
           media query support. IE8 is more or less dead and unsupported, but I still
           enjoyed re-creating unsupported functionality`,
-    url: '//github.com/nvandoorn/IEMediaQueries'
+    url: 'https://github.com/nvandoorn/IEMediaQueries'
   },
   {
     name: 'times-table-tester',
     brief: 'Code is easier than mental math',
     date: 'March 2007',
-    url: '//github.com/nvandoorn/times-table-tester',
+    url: 'https://github.com/nvandoorn/times-table-tester',
     desc: 'In 6th grade I made command line app to quiz myself on times tables.'
   }
 ]
