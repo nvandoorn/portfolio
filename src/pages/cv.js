@@ -39,9 +39,9 @@ export default () => (
           }
         `}
       >
-        <a>vandoorn.nick@gmail.com</a>
-        <a>github.com/nvandoorn</a>
-        <a>twitter.com/nickvandoorn</a>
+        <a href="mailto:vandoorn.nick@gmail.com">vandoorn.nick@gmail.com</a>
+        <a href="https://github.com/nvandoorn">github.com/nvandoorn</a>
+        <a href="https://twitter.com/nickvandoorn">twitter.com/nickvandoorn</a>
       </div>
     </header>
 
