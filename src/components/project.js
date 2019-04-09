@@ -88,7 +88,7 @@ export const Project = p => {
               margin-bottom: ${margins.md}px;
             `}
           >
-            {p.desc}
+            <p>{p.desc}</p>
           </div>
         ) : null}
         {p.projectDetails
