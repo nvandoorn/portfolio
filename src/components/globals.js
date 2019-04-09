@@ -40,20 +40,29 @@ const breakpoints = [
   }
 ]
 
+const fontSizes = {
+  h1: '2em',
+  h2: '1.5em',
+  h3: '1.3em',
+  h4: '1.1em'
+}
+
 export const mainTheme = {
   colours,
   fontStack,
   transitions,
   margins,
   breakpoints,
-  radius
+  radius,
+  fontSizes,
+  lineHeight: 2
 }
 
 const highContrastTheme = {
   ...mainTheme,
   colours: {
     background: '#ffffff',
-    main: '#000000'
+    main: '#707070'
   }
 }
 
@@ -62,9 +71,16 @@ export const cvTheme = {
   margins: {
     xsm: 2,
     sm: 2,
-    md: 5,
-    lg: 10
-  }
+    md: 3,
+    lg: 3
+  },
+  fontSizes: {
+    h1: '1.3em',
+    h2: '1.2em',
+    h3: '1.1em',
+    h4: '1.05em'
+  },
+  lineHeight: 1.4
 }
 
 export const themes = {

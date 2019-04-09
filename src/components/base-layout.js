@@ -5,7 +5,26 @@ import { Global, css } from '@emotion/core'
 
 import { Container } from './container'
 
-const globalStyles = ({ colours, transitions, fontStack, baseFontSize }) => css`
+const globalStyles = ({
+  colours,
+  transitions,
+  fontStack,
+  baseFontSize,
+  fontSizes,
+  lineHeight
+}) => css`
+  h1 {
+    font-size: ${fontSizes.h1};
+  }
+  h2 {
+    font-size: ${fontSizes.h2};
+  }
+  h3 {
+    font-size: ${fontSizes.h3};
+  }
+  h4 {
+    font-size: ${fontSizes.h4};
+  }
   *,
   html,
   body {
@@ -26,7 +45,7 @@ const globalStyles = ({ colours, transitions, fontStack, baseFontSize }) => css`
   }
   p,
   li {
-    line-height: 2em;
+    line-height: ${lineHeight};
   }
   li {
     list-style-position: outside;
