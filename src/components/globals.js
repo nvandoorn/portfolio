@@ -62,7 +62,7 @@ const highContrastTheme = {
   ...mainTheme,
   colours: {
     background: '#ffffff',
-    main: '#707070'
+    main: '#343a40'
   }
 }
 
