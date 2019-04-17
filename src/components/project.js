@@ -73,7 +73,7 @@ export const Project = p => {
           >
             <div css={linkIconStyle}>
               <h2 css={projectHeadingStyle}>{p.name}</h2>
-              <FontAwesome icon={faLink} />
+              <FontAwesome icon={faLink} size={p.iconSize} />
             </div>
           </a>
           {p.inProd ? <Tag fontSize="0.8em">In Prod</Tag> : null}
