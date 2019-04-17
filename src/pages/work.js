@@ -120,14 +120,14 @@ export const workHistory = [
     url: 'https://brnkl.io'
   },
   {
-    name: 'Software Developer, Co-op',
+    name: 'Software Developer, Contract',
     brief: 'Forest Technology Systems',
     date: 'Sept 2016 - April 2017',
     projectDetails: [
       {
         listItems: [
           'Implement components of embedded camera product aimed at the fire weather market (FTS RAOS)',
-          'Automate builds and installs',
+          'Automate builds and installs of software updates',
           'Integrate with user facing software as a service product'
         ],
         images: [{ imgUrl: raos, caption: 'FTS RAOS camera system' }]
@@ -135,7 +135,7 @@ export const workHistory = [
     ],
     desc: `During my time at Forest Technology Systems, I worked with a small
           cross-functional team of engineers, product managers,
-          and sales staff to transform a prototype camera stsystem into a production ready product.`,
+          and sales staff to transform a prototype camera system into a production ready product.`,
     url: 'https://ftsinc.com/'
   }
 ]

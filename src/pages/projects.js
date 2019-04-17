@@ -15,16 +15,16 @@ export const projects = [
     url: 'https://github.com/nvandoorn/sunlight-theme',
     brief: 'A theme provider for current level of sunlight',
     date: 'April 2019',
-    showOnCv: true,
     projectDetails: [
       {
         listItems: [
           <>
-            Component to provide <code>theme.lightLevel</code> to all children
-            using <a href="https://emotion.sh/docs/theming">emotion-theming</a>
+            Component to provide the level of sunlight to all children using{' '}
+            <a href="https://emotion.sh/docs/theming">emotion-theming</a>
           </>,
           <>
-            Support colour mapping via <code>middleware</code> prop
+            Support for mapping sunlight level to theme (<code>middleware</code>{' '}
+            prop)
           </>,
           <>
             Small wrapper around{' '}
@@ -51,7 +51,7 @@ export const projects = [
           </>,
           'Tested with Storybook and Jest',
           <>
-            Useful for theme providers, such as{' '}
+            Useful for theme providers such as{' '}
             <a href="https://emotion.sh/docs/theming">emotion-theming</a>
           </>
         ]
@@ -129,14 +129,15 @@ export const projects = [
   {
     name: 'Legato Storage Service',
     brief: 'Non-volatile time series data storage',
-    date: 'Jun 2018 - Present',
-    desc: `The Legato Linux framework offers out of the box support for uploading
-        time series data, but not storing it locally. For this reason, we
-        created this service to persist data for offline cases.`,
+    date: 'Jun 2018 - Feb 2019',
+    desc: `A service that provide non-volatile storage for time series data.
+    All reads and writes are multi-process safe so this service is useful for when
+    one service is logging data and another is sending data.`,
     url: 'https://github.com/brnkl/legato-storage-service'
   },
   {
     name: 'Legato GPS Monitor',
+    showOnCv: true,
     brief:
       'Monitor GPS in a separate process to avoid blocking single threaded apps',
     date: 'April 2018',
@@ -145,8 +146,7 @@ export const projects = [
         listItems: [
           'Allow single threaded apps to read the latest position without blocking',
           'Dynamically poll and cache GPS location based on accuracy',
-          'Expose GPS API as synchronous methods reading from cache',
-          'Cache is updated in background using event-loop based timer (much like in JavaScript)'
+          'Expose GPS API as synchronous methods reading from cache'
         ],
         images: [
           {
@@ -164,7 +164,8 @@ export const projects = [
     name: 'CF3 Config App',
     brief: 'Automatically configure common settings for CF3 based modules',
     date: 'April 2018',
-    desc: `Automatically configure Sierra Wireless CF3 based modules`,
+    desc: `Automatically configure Sierra Wireless CF3 based modules for
+    common GPIO and UART configurations.`,
     inProd: true,
     url: 'https://github.com/brnkl/cf3-config'
   },
@@ -177,7 +178,7 @@ export const projects = [
         listItems: [
           'Port of an Arduino style driver to Linux',
           'Integrated with Sierra Wireless Legato Framework',
-          'In use at Sierra Wireless and with their customers (see forums)'
+          'In use with Sierra Wireless customers (see forums)'
         ],
         images: [
           {
