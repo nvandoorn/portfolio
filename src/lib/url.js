@@ -1,7 +1,7 @@
-import { window } from 'browser-monads'
+// import { window } from 'browser-monads'
 
-export const parseQuery = () =>
-  window.location.search && parseQueryString(window.location.search)
+export const parseQuery = () => ''
+// window.location.search && parseQueryString(window.location.search)
 
 export const parseQueryString = query =>
   query
@@ -22,5 +22,5 @@ export const objectToQuery = query =>
   )
 
 export const writeQuery = queryObj => {
-  window.history.pushState({}, '', objectToQuery(queryObj))
+  // window.history.pushState({}, '', objectToQuery(queryObj))
 }
