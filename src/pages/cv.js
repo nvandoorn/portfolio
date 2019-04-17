@@ -39,7 +39,13 @@ export default () => (
         `
       }
     >
-      <h1>Nicholas Van Doorn</h1>
+      <h1
+        css={css`
+          font-size: 2em;
+        `}
+      >
+        Nicholas Van Doorn
+      </h1>
       <div
         css={({ margins }) => css`
           & a {
