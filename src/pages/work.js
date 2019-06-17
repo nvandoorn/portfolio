@@ -11,6 +11,14 @@ import raos from '../images/raos.jpg'
 
 export const workHistory = [
   {
+    name: 'Software Developer, Contract',
+    brief: 'Super Good Software',
+    date: 'May 2019 - present',
+    url: 'https://supergood.software/',
+    desc: `SUPER GOOD is a software development agency specializing in Ruby on Rails, Spree/Solidus, eCommerce,
+          and React. We have been working together to launch an exciting Rails based app. More details soon`
+  },
+  {
     name: 'Lead Software Developer',
     brief: 'BRNKL by Barnacle Systems',
     date: 'Sept 2017 - Feb 2019',
