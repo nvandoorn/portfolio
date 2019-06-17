@@ -69,10 +69,10 @@ const highContrastTheme = {
 export const cvTheme = {
   ...highContrastTheme,
   margins: {
-    xsm: 2,
-    sm: 3,
-    md: 4,
-    lg: 4
+    xsm: 5,
+    sm: 10,
+    md: 12,
+    lg: 15
   },
   fontSizes: {
     h1: '1.3em',
