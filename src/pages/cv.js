@@ -40,8 +40,9 @@ export default () => (
       }
     >
       <h1
-        css={css`
+        css={({ margins }) => css`
           font-size: 2em;
+          margin-bottom: ${margins.md}px;
         `}
       >
         Nicholas Van Doorn
@@ -49,7 +50,7 @@ export default () => (
       <div
         css={({ margins }) => css`
           & a {
-            margin-right: 20px;
+            margin-right: ${margins.lg}px;
           }
         `}
       >
@@ -62,7 +63,7 @@ export default () => (
     <div
       css={({ margins }) => css`
         & h1 {
-          margin-bottom: ${margins.lg}px;
+          margin-bottom: ${margins.md}px;
         }
       `}
     >
