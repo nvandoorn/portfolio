@@ -25,11 +25,10 @@ export const skills = [
 ]
 
 export const tools = [
-  `Languages: Expert in TypeScript/JavaScript, fluent in C, working knowledge of Python and Shell`,
-  'Frontend: React, Angular, Ionic, RxJS, Redux',
-  'Infrastructure: Node, Firebase, Google Cloud (Cloud Functions, Pubsub, Stackdriver)',
-  'Embedded: Linux, Legato, Yocto, AirVantage',
-  'Automation: TSLint, ESLint, Prettier, clang-format'
+  `TypeScript/JavaScript`,
+  `Ruby`,
+  `Rails`,
+  `Shell (I use zsh)`
 ]
 
 const aboutLists = [
@@ -69,7 +68,7 @@ const aboutLists = [
       </>
     ),
     listItems: [
-      `Learn more languages. I love deriving influence from all languages. In particular, I'm interested in Ruby,
+      `Learn more languages. I love deriving influence from all languages. In particular, I'm interested in 
       Rust, Smalltalk, ReasonML, and Elixir.`,
       `Write a driver using the Linux framebuffer API. Although I never want to
       specialize in operating systems, learning about them is fascinating and
